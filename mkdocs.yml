@@ -1,0 +1,112 @@
+site_name: Fantastic Engine
+site_description: Experiments and learning playground with Claude Code
+site_author: AngelCantugr
+site_url: https://angelcantugr.github.io/fantastic-engine/
+
+repo_name: fantastic-engine
+repo_url: https://github.com/AngelCantugr/fantastic-engine
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    # Cyberpunk dark theme
+    scheme: slate
+    primary: custom
+    accent: custom
+  font:
+    text: Roboto Mono
+    code: Fira Code
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+extra_css:
+  - stylesheets/cyberpunk.css
+
+extra_javascript:
+  - javascripts/cyberpunk.js
+
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AngelCantugr/fantastic-engine
+  generator: false
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Overview: getting-started/overview.md
+    - Quick Start: getting-started/quick-start.md
+  - Experiments:
+    - Index: experiments/index.md
+  - Projects:
+    - Index: projects/index.md
+  - Learning Log:
+    - Index: learning-log/index.md
+  - Templates:
+    - Project Template: templates/project-template.md
+    - Documentation Guides: templates/documentation.md
+
+# GitHub Pages configuration
+use_directory_urls: true
+strict: false
