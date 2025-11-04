@@ -615,4 +615,4 @@ Good documentation in this repo:
 
 ---
 
-**Remember:** Good documentation is a gift to future you! 🎁**
+**Remember:** Good documentation is a gift to future you! 🎁
