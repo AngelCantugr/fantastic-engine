@@ -101,6 +101,8 @@ nav:
     - Index: experiments/index.md
   - Projects:
     - Index: projects/index.md
+    - RAG Learning Project: projects/rag-learning-project.md
+    - TickTick Priority Agent: projects/ticktick-priority-agent.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:

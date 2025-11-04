@@ -29,23 +29,29 @@ Projects are for experiments that have proven their worth and need:
 
 ## Active Projects
 
-!!! note "No projects yet"
-    When your experiments mature, promote them here! See [Quick Start Guide](../getting-started/quick-start.md)
+### 🚧 RAG Learning Project
+**Tech:** Python 3.12, LangChain, ChromaDB, OpenAI/Ollama
+**Purpose:** Learn Retrieval-Augmented Generation from scratch
+**Status:** 🚧 In Progress
+**Started:** 2025-11-04
 
-<!-- Add your projects here as you create them:
+A comprehensive learning project that teaches you how to build RAG (Retrieval-Augmented Generation) systems. Includes three progressively advanced examples with detailed educational content, sample data, and support for both local (Ollama) and cloud (OpenAI) LLMs.
 
-### ✅ project-name
-**Tech:** {Language/Framework}
-**Purpose:** {What it does}
-**Status:** {🚧 In Progress / ✅ Stable / 📦 Graduated}
-**Started:** {Date}
-
-{Brief description}
-
-[View details](../projects/project-name/) | [Source](https://github.com/user/project-name)
+[View details](rag-learning-project.md) | [Source](../../projects/rag-learning-project/)
 
 ---
--->
+
+### 🚧 TickTick Priority Agent
+**Tech:** Python 3.12, LangChain, Ollama, TickTick API
+**Purpose:** AI agent that helps prioritize your tasks
+**Status:** 🚧 In Progress
+**Started:** 2025-11-04
+
+An intelligent agent built with LangChain that connects to your TickTick account and helps you prioritize tasks using AI. Demonstrates agent architecture, tool integration, API authentication, and practical prompt engineering. Great for learning how to build autonomous AI agents.
+
+[View details](ticktick-priority-agent.md) | [Source](../../projects/ticktick-priority-agent/)
+
+---
 
 ## Project Lifecycle
 
