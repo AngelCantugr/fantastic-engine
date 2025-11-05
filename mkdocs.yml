@@ -99,6 +99,7 @@ nav:
     - Quick Start: getting-started/quick-start.md
   - Experiments:
     - Index: experiments/index.md
+    - AI Kit - Gamified Agents: experiments/ai-kit-gamified-agents.md
     - Goose Documentation Management: experiments/goose-doc-management.md
   - Projects:
     - Index: projects/index.md
