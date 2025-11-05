@@ -1,0 +1,51 @@
+# Aider Configuration with Memory & Knowledge Graph MCP
+
+# MCP Configuration
+mcp:
+  enabled: true
+  servers:
+    memory:
+      command: "npx"
+      args:
+        - "-y"
+        - "@modelcontextprotocol/server-memory"
+      env:
+        MEMORY_DB_PATH: "/home/user/.local/share/ai-memory/memory.db"
+
+    knowledge-graph:
+      command: "npx"
+      args:
+        - "-y"
+        - "@modelcontextprotocol/server-knowledge-graph"
+      env:
+        GRAPH_DB_PATH: "/home/user/.local/share/ai-memory/knowledge-graph.json"
+        GRAPH_STORAGE_TYPE: "json"
+
+# Model configuration
+# Default to GPT-4 for best results
+model: gpt-4-turbo-preview
+
+# Alternative: Use Claude
+# model: claude-3-opus-20240229
+
+# Aider settings
+auto-commits: true
+dirty-commits: true
+attribute-author: true
+attribute-committer: true
+
+# Git configuration
+git: true
+gitignore: true
+
+# Editor integration
+editor: vim
+
+# Dark mode (for terminal output)
+dark-mode: true
+
+# Enable map-tokens for better context management
+map-tokens: 2048
+
+# Cache directory
+cache-dir: /home/user/.cache/aider

@@ -1,0 +1,41 @@
+# Goose AI Configuration with Memory & Knowledge Graph MCP
+
+# MCP Server Configuration
+mcp_servers:
+  - name: memory
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-memory"
+    env:
+      MEMORY_DB_PATH: /home/user/.local/share/ai-memory/memory.db
+
+  - name: knowledge-graph
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-knowledge-graph"
+    env:
+      GRAPH_DB_PATH: /home/user/.local/share/ai-memory/knowledge-graph.json
+      GRAPH_STORAGE_TYPE: json
+
+# Default model configuration
+# Use local Ollama for faster experimentation
+provider: ollama
+model: codellama:13b
+
+# Alternative: Use OpenAI
+# provider: openai
+# model: gpt-4
+
+# Goose-specific settings
+session:
+  # Enable session persistence
+  save_history: true
+  history_file: /home/user/.local/share/ai-memory/goose-history.json
+
+# Tools configuration
+tools:
+  enabled: true
+  # Enable MCP tools
+  mcp: true
