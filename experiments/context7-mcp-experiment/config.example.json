@@ -1,0 +1,20 @@
+{
+  "// Comment": "Context7 MCP Server Configuration Template",
+  "// Instructions": "1. Copy this to your AI assistant's config location. 2. Replace placeholder values with your actual Upstash credentials. 3. Restart your AI assistant",
+
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp-server"],
+      "env": {
+        "UPSTASH_REDIS_REST_URL": "https://YOUR-REDIS-URL.upstash.io",
+        "UPSTASH_REDIS_REST_TOKEN": "YOUR-TOKEN-HERE"
+      }
+    }
+  },
+
+  "// Optional Configuration": "Uncomment and customize as needed",
+  "// CONTEXT7_LIBRARIES": "react,nextjs,tailwindcss,typescript,vite",
+  "// CONTEXT7_CACHE_TTL": "3600",
+  "// CONTEXT7_DEBUG": "false"
+}
