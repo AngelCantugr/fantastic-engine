@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "env": {
+        "MEMORY_DB_PATH": "/home/user/.local/share/ai-memory/memory.db"
+      }
+    },
+    "knowledge-graph": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-knowledge-graph"
+      ],
+      "env": {
+        "GRAPH_DB_PATH": "/home/user/.local/share/ai-memory/knowledge-graph.json",
+        "GRAPH_STORAGE_TYPE": "json"
+      }
+    }
+  },
+  "globalShortcut": "Ctrl+Space"
+}
