@@ -1,0 +1,46 @@
+# Goose Configuration Example
+# Copy this to ~/.config/goose/config.yaml and customize
+
+# Primary LLM Configuration
+provider: ollama
+model: llama3.2
+host: http://localhost:11434
+
+# Optional: Multi-model configuration
+# Goose can use different models for different tasks
+models:
+  - provider: ollama
+    model: llama3.2
+    temperature: 0.7
+    description: "General purpose model"
+
+  - provider: ollama
+    model: qwen2.5-coder
+    temperature: 0.3
+    description: "Code-focused tasks"
+
+  - provider: ollama
+    model: deepseek-r1:8b
+    temperature: 0.5
+    description: "Reasoning-heavy tasks"
+
+# MCP Server Configuration
+mcp_servers:
+  # Option 1: Fetch Server (Recommended)
+  - name: fetch
+    command: python
+    args: ["-m", "mcp_server_fetch"]
+
+  # Option 2: Brave Search (requires API key)
+  # - name: brave-search
+  #   command: npx
+  #   args: ["-y", "@modelcontextprotocol/server-brave-search"]
+  #   env:
+  #     BRAVE_API_KEY: "your-api-key-here"
+
+# Goose Behavior Settings (optional)
+settings:
+  auto_approve_tools: false  # Require confirmation for tool execution
+  max_tokens: 4096
+  verbose: true
+  log_level: info
