@@ -100,6 +100,7 @@ nav:
   - Experiments:
     - Index: experiments/index.md
     - Goose Documentation Management: experiments/goose-doc-management.md
+    - SpecKit Learning Guide: experiments/speckit-learning-guide.md
   - Projects:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
