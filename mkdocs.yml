@@ -101,6 +101,7 @@ nav:
     - Index: experiments/index.md
     - Memory & Knowledge Graph MCP: experiments/memory-knowledge-graph-learning.md
     - AI Kit - Gamified Agents: experiments/ai-kit-gamified-agents.md
+    - Context7 MCP Experiment: experiments/context7-mcp-experiment.md
     - Goose Documentation Management: experiments/goose-doc-management.md
     - SpecKit Learning Guide: experiments/speckit-learning-guide.md
   - Projects:
