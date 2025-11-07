@@ -99,6 +99,7 @@ nav:
     - Quick Start: getting-started/quick-start.md
   - Claude Skills:
     - Skills Collection: skills-collection.md
+    - Learning & Notes: learning-skills.md
   - Experiments:
     - Index: experiments/index.md
     - Memory & Knowledge Graph MCP: experiments/memory-knowledge-graph-learning.md
