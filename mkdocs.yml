@@ -104,6 +104,12 @@ nav:
     - Context7 MCP Experiment: experiments/context7-mcp-experiment.md
     - Goose Documentation Management: experiments/goose-doc-management.md
     - SpecKit Learning Guide: experiments/speckit-learning-guide.md
+    - AI Productivity Orchestration:
+      - Overview: experiments/ai-productivity-orchestration/README.md
+      - MCP Setup Guide: experiments/ai-productivity-orchestration/mcp-setup.md
+      - Agent Configurations: experiments/ai-productivity-orchestration/agent-configs.md
+      - Workflow Templates: experiments/ai-productivity-orchestration/workflow-templates.md
+      - Testing Log: experiments/ai-productivity-orchestration/agent-testing-log.md
   - Projects:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
