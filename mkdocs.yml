@@ -121,6 +121,9 @@ nav:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
     - TickTick Priority Agent: projects/ticktick-priority-agent.md
+    - OAuth 2.0 for MCP & Agents:
+      - Overview: projects/oauth2-mcp-exploration.md
+      - Learning Guide: projects/oauth2-learning-guide.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:

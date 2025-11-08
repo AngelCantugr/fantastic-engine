@@ -1,0 +1,32 @@
+{
+  "name": "oauth2-mcp-exploration",
+  "version": "1.0.0",
+  "description": "Exploring OAuth 2.0 with MCP servers and AI agents",
+  "private": true,
+  "workspaces": [
+    "auth-server",
+    "resource-server",
+    "mcp-client",
+    "agent-client",
+    "shared"
+  ],
+  "scripts": {
+    "install-all": "npm install",
+    "dev:auth": "npm run dev -w auth-server",
+    "dev:resource": "npm run dev -w resource-server",
+    "dev:mcp": "npm run dev -w mcp-client",
+    "dev:agent": "npm run dev -w agent-client",
+    "dev:all": "concurrently \"npm run dev:auth\" \"npm run dev:resource\"",
+    "build": "npm run build --workspaces",
+    "clean": "npm run clean --workspaces && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "concurrently": "^8.2.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  }
+}
