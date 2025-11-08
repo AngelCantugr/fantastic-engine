@@ -134,6 +134,18 @@ nav:
         - 18 - Infrastructure Generator: experiments/ai-engineer-learning/agents/18_infrastructure_generator/README.md
         - 19 - Incident Commander: experiments/ai-engineer-learning/agents/19_incident_commander/README.md
         - 20 - Tech Debt Prioritizer: experiments/ai-engineer-learning/agents/20_tech_debt_prioritizer/README.md
+      - Learning Guide: experiments/ai-engineer-learning/LEARNING.md
+      - Learning (21-30):
+        - 21 - Kata Coach: experiments/ai-engineer-learning/agents/21_kata_coach/README.md
+        - 22 - Algorithm Visualizer: experiments/ai-engineer-learning/agents/22_algorithm_visualizer/README.md
+        - 23 - Design Pattern Teacher: experiments/ai-engineer-learning/agents/23_design_pattern_teacher/README.md
+        - 24 - Tech Stack Explorer: experiments/ai-engineer-learning/agents/24_tech_stack_explorer/README.md
+        - 25 - Learning Path Generator: experiments/ai-engineer-learning/agents/25_learning_path_generator/README.md
+        - 26 - System Design Coach: experiments/ai-engineer-learning/agents/26_system_design_coach/README.md
+        - 27 - Code Quality Mentor: experiments/ai-engineer-learning/agents/27_code_quality_mentor/README.md
+        - 28 - Tech Blog Writer: experiments/ai-engineer-learning/agents/28_tech_blog_writer/README.md
+        - 29 - Complexity Analyzer: experiments/ai-engineer-learning/agents/29_complexity_analyzer/README.md
+        - 30 - Interactive Debugger: experiments/ai-engineer-learning/agents/30_interactive_debugger/README.md
     - AI Productivity Orchestration:
       - Overview: experiments/ai-productivity-orchestration/README.md
       - Quick Start: experiments/ai-productivity-orchestration/quick-start.md

@@ -408,4 +408,24 @@ See [ADVANCED.md](./ADVANCED.md) for the complete advanced curriculum featuring:
 
 ---
 
+## 🎓 Want to Master Your Skills? Learning Agents 21-30
+
+Continue your journey with **10 learning and skill-building agents** focused on continuous improvement!
+
+See [LEARNING.md](./LEARNING.md) for the complete learning curriculum featuring:
+- 🥋 **Agent 21:** Coding Kata Coach - Daily practice & challenges
+- 📊 **Agent 22:** Algorithm Visualizer - Visual algorithm learning
+- 🎨 **Agent 23:** Design Pattern Teacher - 23 GoF patterns
+- 🔍 **Agent 24:** Tech Stack Explorer - Compare & research tech
+- 🗺️ **Agent 25:** Learning Path Generator - Personalized roadmaps
+- 🎤 **Agent 26:** System Design Interview Coach - Mock interviews
+- ⭐ **Agent 27:** Code Quality Mentor - SOLID & clean code
+- ✍️ **Agent 28:** Tech Blog Writer - Technical writing
+- 🧮 **Agent 29:** Complexity Analyzer - Big O mastery
+- 🐛 **Agent 30:** Interactive Debugger - Problem-solving skills
+
+**Grand Total: 30 AI Agents - The Complete AI Engineer Journey!**
+
+---
+
 **Ready to become an AI Engineer?** Start with [Agent 1: Simple Chat](./agents/01_simple_chat/README.md) →
