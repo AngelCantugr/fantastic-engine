@@ -174,6 +174,16 @@ nav:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
     - TickTick Priority Agent: projects/ticktick-priority-agent.md
+    - Language Models from Scratch:
+      - Overview: ../projects/language-models-from-scratch/README.md
+      - Learning Path: ../projects/language-models-from-scratch/docs/learning-path.md
+      - Core Concepts: ../projects/language-models-from-scratch/docs/concepts.md
+      - Model 1 - Character RNN: ../projects/language-models-from-scratch/model-01-char-rnn/README.md
+      - Model 2 - Word RNN: ../projects/language-models-from-scratch/model-02-word-rnn/README.md
+      - Model 3 - LSTM + Attention: ../projects/language-models-from-scratch/model-03-lstm-attention/README.md
+      - Model 4 - Mini Transformer: ../projects/language-models-from-scratch/model-04-mini-transformer/README.md
+      - Model 5 - GPT-Style: ../projects/language-models-from-scratch/model-05-gpt-style/README.md
+      - Datasets: ../projects/language-models-from-scratch/shared/data/README.md
     - Data + AI Engineering:
       - Overview: ../projects/data-ai-engineering/README.md
       - Datasets: ../projects/data-ai-engineering/docs/DATASETS.md
