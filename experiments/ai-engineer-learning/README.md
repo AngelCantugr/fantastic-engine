@@ -388,4 +388,24 @@ MIT License - Learn freely, build freely, share freely!
 
 ---
 
+## 🚀 Want More? Advanced Agents 11-20
+
+After mastering the fundamentals, continue with **10 more advanced agents** focusing on DevOps, SRE, and system architecture!
+
+See [ADVANCED.md](./ADVANCED.md) for the complete advanced curriculum featuring:
+- 🔧 **Agent 11:** API Schema Generation (OpenAPI/Swagger)
+- 🗄️ **Agent 12:** SQL Query Optimization
+- 📦 **Agent 13:** Dependency & Security Analysis
+- ⚡ **Agent 14:** Performance Profiling
+- 🔄 **Agent 15:** Code Migration Automation
+- ✅ **Agent 16:** API Contract Testing
+- 🏗️ **Agent 17:** Microservices Decomposition
+- ☁️ **Agent 18:** Infrastructure as Code Generation
+- 🚨 **Agent 19:** Incident Response & Postmortems
+- 📊 **Agent 20:** Technical Debt Prioritization
+
+**Total: 20 AI Agents covering the full spectrum of software engineering!**
+
+---
+
 **Ready to become an AI Engineer?** Start with [Agent 1: Simple Chat](./agents/01_simple_chat/README.md) →
