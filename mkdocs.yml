@@ -204,6 +204,20 @@ nav:
     - OAuth 2.0 for MCP & Agents:
       - Overview: projects/oauth2-mcp-exploration.md
       - Learning Guide: projects/oauth2-learning-guide.md
+    - Model Fine-Tuning Techniques:
+      - Overview: ../projects/model-fine-tuning-techniques/README.md
+      - Documentation:
+        - Introduction: ../projects/model-fine-tuning-techniques/docs/index.md
+        - Concepts: ../projects/model-fine-tuning-techniques/docs/01-introduction.md
+        - Full Fine-Tuning: ../projects/model-fine-tuning-techniques/docs/02-full-fine-tuning.md
+        - LoRA: ../projects/model-fine-tuning-techniques/docs/03-lora.md
+        - Learning Paths: ../projects/model-fine-tuning-techniques/docs/learning-paths.md
+      - Beginner Examples:
+        - Full Fine-Tuning: ../projects/model-fine-tuning-techniques/examples/beginner/full-fine-tuning/README.md
+        - LoRA: ../projects/model-fine-tuning-techniques/examples/beginner/lora/README.md
+      - Intermediate Examples:
+        - Advanced LoRA: ../projects/model-fine-tuning-techniques/examples/intermediate/lora/README.md
+        - QLoRA: ../projects/model-fine-tuning-techniques/examples/intermediate/qlora/README.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
