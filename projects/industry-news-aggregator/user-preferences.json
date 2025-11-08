@@ -1,0 +1,64 @@
+{
+  "interests": {
+    "primary_topics": [
+      "artificial intelligence",
+      "large language models",
+      "software development",
+      "web technologies"
+    ],
+    "secondary_topics": [
+      "devops",
+      "cloud computing",
+      "open source"
+    ],
+    "specific_interests": [
+      "Claude AI developments",
+      "GitHub Copilot updates",
+      "React and Next.js",
+      "Python ecosystem"
+    ]
+  },
+  "sources": {
+    "preferred": [
+      "techcrunch.com",
+      "arstechnica.com",
+      "theverge.com",
+      "hacker news",
+      "github blog"
+    ],
+    "technical": [
+      "arxiv.org",
+      "research.anthropic.com",
+      "openai.com/research"
+    ],
+    "avoid": []
+  },
+  "preferences": {
+    "summary_length": "concise",
+    "technical_depth": "intermediate",
+    "include_opinions": false,
+    "highlight_breaking_news": true,
+    "max_articles_per_topic": 10,
+    "default_time_range": "7d"
+  },
+  "filters": {
+    "min_relevance_score": 6.0,
+    "exclude_keywords": [
+      "cryptocurrency price",
+      "stock market"
+    ],
+    "required_freshness_days": 30
+  },
+  "adhd_optimizations": {
+    "use_bullet_points": true,
+    "highlight_key_takeaways": true,
+    "include_tldr": true,
+    "visual_separators": true,
+    "emoji_markers": true
+  },
+  "storage": {
+    "auto_cleanup_days": 90,
+    "compress_old_raw_data": true,
+    "max_storage_mb": 500
+  }
+}

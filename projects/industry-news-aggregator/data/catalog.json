@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "created": "2025-11-08",
+  "description": "Catalog of all industry news searches and summaries",
+  "entries": [],
+  "topics": {},
+  "schema": {
+    "entry": {
+      "id": "unique-identifier (YYYY-MM-DD-HHMMSS-topic-slug)",
+      "timestamp": "ISO 8601 timestamp",
+      "topic": "search topic",
+      "keywords": ["array", "of", "keywords"],
+      "sources": {
+        "brave": "path/to/raw/brave-results.json",
+        "perplexity": "path/to/raw/perplexity-results.json"
+      },
+      "summary": "path/to/summary.md",
+      "tags": ["ai", "software", "industry"],
+      "relevance_score": 0.0,
+      "follow_up_questions": ["question1", "question2"],
+      "related_entries": ["entry-id-1", "entry-id-2"]
+    }
+  }
+}

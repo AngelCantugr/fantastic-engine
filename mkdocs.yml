@@ -121,6 +121,10 @@ nav:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
     - TickTick Priority Agent: projects/ticktick-priority-agent.md
+    - Industry News Aggregator:
+      - Overview: projects/industry-news-aggregator.md
+      - Quick Start: projects/industry-news-aggregator-quickstart.md
+      - MCP Setup: projects/industry-news-aggregator-mcp-setup.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
