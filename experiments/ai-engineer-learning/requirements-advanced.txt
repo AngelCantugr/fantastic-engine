@@ -1,0 +1,43 @@
+# Advanced AI Engineer Learning Path - Additional Dependencies
+# Install these in addition to requirements.txt
+
+# API & Schema Tools (Agent 11)
+pyyaml>=6.0.1
+openapi-spec-validator>=0.7.1
+
+# SQL Tools (Agent 12)
+sqlparse>=0.5.0
+sqlglot>=25.0.0
+
+# Dependency Analysis (Agent 13)
+pip-audit>=2.7.0
+safety>=3.0.0
+
+# Performance Profiling (Agent 14)
+# py-spy is platform-specific, install separately if needed
+# pip install py-spy
+# memray is also optional
+memory-profiler>=0.61.0
+
+# Code Transformation (Agent 15)
+libcst>=1.4.0
+# bowler>=0.9.0  # Optional for advanced transformations
+
+# Contract Testing (Agent 16)
+jsonschema>=4.22.0
+# schemathesis>=3.27.0  # Optional for property-based testing
+# pact-python>=2.0.0  # Optional for Pact workflow
+
+# Graph Analysis (Agent 17)
+networkx>=3.3
+
+# Infrastructure as Code (Agent 18)
+# pulumi>=3.0.0  # Optional - requires cloud provider setup
+# Note: Terraform/K8s are external tools
+
+# Incident Management (Agent 19)
+python-dateutil>=2.9.0
+
+# Code Quality Analysis (Agent 20)
+radon>=6.0.1  # Complexity metrics
+vulture>=2.11  # Dead code detection
