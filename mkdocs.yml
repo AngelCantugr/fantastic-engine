@@ -107,6 +107,59 @@ nav:
     - Context7 MCP Experiment: experiments/context7-mcp-experiment.md
     - Goose Documentation Management: experiments/goose-doc-management.md
     - SpecKit Learning Guide: experiments/speckit-learning-guide.md
+    - AI Engineer Learning Path:
+      - Overview: experiments/ai-engineer-learning/docs/index.md
+      - Quick Start: experiments/ai-engineer-learning/QUICKSTART.md
+      - Main Guide: experiments/ai-engineer-learning/README.md
+      - Fundamentals (1-10):
+        - 01 - Simple Chat: experiments/ai-engineer-learning/agents/01_simple_chat/README.md
+        - 02 - Code Review: experiments/ai-engineer-learning/agents/02_code_review/README.md
+        - 03 - Commit Messages: experiments/ai-engineer-learning/agents/03_commit_message/README.md
+        - 04 - Documentation Writer: experiments/ai-engineer-learning/agents/04_doc_writer/README.md
+        - 05 - Test Generator: experiments/ai-engineer-learning/agents/05_test_generator/README.md
+        - 06 - PR Analyzer: experiments/ai-engineer-learning/agents/06_pr_analyzer/README.md
+        - 07 - Refactoring Suggester: experiments/ai-engineer-learning/agents/07_refactoring_suggester/README.md
+        - 08 - Architecture Advisor: experiments/ai-engineer-learning/agents/08_architecture_advisor/README.md
+        - 09 - Bug Hunter: experiments/ai-engineer-learning/agents/09_bug_hunter/README.md
+        - 10 - Pair Programmer: experiments/ai-engineer-learning/agents/10_pair_programmer/README.md
+      - Advanced Guide: experiments/ai-engineer-learning/ADVANCED.md
+      - Advanced (11-20):
+        - 11 - API Schema Generator: experiments/ai-engineer-learning/agents/11_api_schema_generator/README.md
+        - 12 - SQL Optimizer: experiments/ai-engineer-learning/agents/12_sql_optimizer/README.md
+        - 13 - Dependency Analyzer: experiments/ai-engineer-learning/agents/13_dependency_analyzer/README.md
+        - 14 - Performance Profiler: experiments/ai-engineer-learning/agents/14_performance_profiler/README.md
+        - 15 - Migration Assistant: experiments/ai-engineer-learning/agents/15_migration_assistant/README.md
+        - 16 - Contract Tester: experiments/ai-engineer-learning/agents/16_contract_tester/README.md
+        - 17 - Microservices Decomposer: experiments/ai-engineer-learning/agents/17_microservices_decomposer/README.md
+        - 18 - Infrastructure Generator: experiments/ai-engineer-learning/agents/18_infrastructure_generator/README.md
+        - 19 - Incident Commander: experiments/ai-engineer-learning/agents/19_incident_commander/README.md
+        - 20 - Tech Debt Prioritizer: experiments/ai-engineer-learning/agents/20_tech_debt_prioritizer/README.md
+      - Learning Guide: experiments/ai-engineer-learning/LEARNING.md
+      - Learning (21-30):
+        - 21 - Kata Coach: experiments/ai-engineer-learning/agents/21_kata_coach/README.md
+        - 22 - Algorithm Visualizer: experiments/ai-engineer-learning/agents/22_algorithm_visualizer/README.md
+        - 23 - Design Pattern Teacher: experiments/ai-engineer-learning/agents/23_design_pattern_teacher/README.md
+        - 24 - Tech Stack Explorer: experiments/ai-engineer-learning/agents/24_tech_stack_explorer/README.md
+        - 25 - Learning Path Generator: experiments/ai-engineer-learning/agents/25_learning_path_generator/README.md
+        - 26 - System Design Coach: experiments/ai-engineer-learning/agents/26_system_design_coach/README.md
+        - 27 - Code Quality Mentor: experiments/ai-engineer-learning/agents/27_code_quality_mentor/README.md
+        - 28 - Tech Blog Writer: experiments/ai-engineer-learning/agents/28_tech_blog_writer/README.md
+        - 29 - Complexity Analyzer: experiments/ai-engineer-learning/agents/29_complexity_analyzer/README.md
+        - 30 - Interactive Debugger: experiments/ai-engineer-learning/agents/30_interactive_debugger/README.md
+    - AI Technologies 2025:
+      - Overview: experiments/ai-technologies-2025/README.md
+      - Theory:
+        - Introduction: experiments/ai-technologies-2025/docs/01-overview.md
+        - Agent Protocols: experiments/ai-technologies-2025/docs/02-agent-protocols.md
+        - RAG Systems: experiments/ai-technologies-2025/docs/03-rag-systems.md
+        - Multi-Agent Frameworks: experiments/ai-technologies-2025/docs/04-multi-agent-frameworks.md
+        - Best Practices: experiments/ai-technologies-2025/docs/05-best-practices.md
+      - Practical Examples:
+        - RAG Implementation: experiments/ai-technologies-2025/examples/practical/rag-implementation/README.md
+        - MCP Server: experiments/ai-technologies-2025/examples/practical/mcp-server/README.md
+        - Multi-Agent Crew: experiments/ai-technologies-2025/examples/practical/multi-agent-crew/README.md
+      - Experimental:
+        - Hybrid RAG + Agents: experiments/ai-technologies-2025/examples/experimental/hybrid-rag-agents/README.md
     - AI Productivity Orchestration:
       - Overview: experiments/ai-productivity-orchestration/README.md
       - Quick Start: experiments/ai-productivity-orchestration/quick-start.md
@@ -131,6 +184,26 @@ nav:
       - Use Cases:
         - 'Use Case #2: MLOps Pipeline': ../projects/data-ai-engineering/use-cases/02-mlops-pipeline/README.md
         - 'Use Case #3: AI Data Quality': ../projects/data-ai-engineering/use-cases/04-data-quality-ai/README.md
+    - Industry News Aggregator:
+      - Overview: projects/industry-news-aggregator.md
+      - Quick Start: projects/industry-news-aggregator-quickstart.md
+      - MCP Setup: projects/industry-news-aggregator-mcp-setup.md
+    - Multi-Agent Orchestration:
+      - Overview: projects/multi-agent-orchestration/README.md
+      - Introduction: projects/multi-agent-orchestration/docs/01-introduction.md
+      - Pattern Comparison: projects/multi-agent-orchestration/docs/02-pattern-comparison.md
+      - Swarm Pattern: projects/multi-agent-orchestration/docs/03-swarm-pattern.md
+      - Supervisor Pattern: projects/multi-agent-orchestration/docs/04-supervisor-pattern.md
+      - Graph Pattern: projects/multi-agent-orchestration/docs/05-graph-pattern.md
+      - Sequential Pattern: projects/multi-agent-orchestration/docs/06-sequential-pattern.md
+      - Reflection Pattern: projects/multi-agent-orchestration/docs/07-reflection-pattern.md
+      - Plan-Execute Pattern: projects/multi-agent-orchestration/docs/08-plan-execute-pattern.md
+      - Router Pattern: projects/multi-agent-orchestration/docs/09-router-pattern.md
+      - Parallel Pattern: projects/multi-agent-orchestration/docs/10-parallel-pattern.md
+      - Choosing a Pattern: projects/multi-agent-orchestration/docs/11-choosing-a-pattern.md
+    - OAuth 2.0 for MCP & Agents:
+      - Overview: projects/oauth2-mcp-exploration.md
+      - Learning Guide: projects/oauth2-learning-guide.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
