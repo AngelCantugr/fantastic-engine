@@ -121,6 +121,19 @@ nav:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
     - TickTick Priority Agent: projects/ticktick-priority-agent.md
+    - Multi-Agent Orchestration:
+      - Overview: projects/multi-agent-orchestration/README.md
+      - Introduction: projects/multi-agent-orchestration/docs/01-introduction.md
+      - Pattern Comparison: projects/multi-agent-orchestration/docs/02-pattern-comparison.md
+      - Swarm Pattern: projects/multi-agent-orchestration/docs/03-swarm-pattern.md
+      - Supervisor Pattern: projects/multi-agent-orchestration/docs/04-supervisor-pattern.md
+      - Graph Pattern: projects/multi-agent-orchestration/docs/05-graph-pattern.md
+      - Sequential Pattern: projects/multi-agent-orchestration/docs/06-sequential-pattern.md
+      - Reflection Pattern: projects/multi-agent-orchestration/docs/07-reflection-pattern.md
+      - Plan-Execute Pattern: projects/multi-agent-orchestration/docs/08-plan-execute-pattern.md
+      - Router Pattern: projects/multi-agent-orchestration/docs/09-router-pattern.md
+      - Parallel Pattern: projects/multi-agent-orchestration/docs/10-parallel-pattern.md
+      - Choosing a Pattern: projects/multi-agent-orchestration/docs/11-choosing-a-pattern.md
     - OAuth 2.0 for MCP & Agents:
       - Overview: projects/oauth2-mcp-exploration.md
       - Learning Guide: projects/oauth2-learning-guide.md
