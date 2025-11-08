@@ -1,0 +1,148 @@
+# NYC Taxi Data Quality Configuration
+
+dataset:
+  name: "NYC Taxi Trips"
+  path: "data/nyc_taxi/yellow_tripdata_2024-01.parquet"
+  format: "parquet"
+  description: "NYC Yellow Taxi trip records from TLC"
+
+validation:
+  # Great Expectations Rules
+  rules:
+    # Fare validation
+    - column: "fare_amount"
+      expectations:
+        - type: "expect_column_values_to_be_between"
+          min: 0
+          max: 500
+          mostly: 0.99  # Allow 1% outside range for investigation
+        - type: "expect_column_values_to_not_be_null"
+
+    # Trip distance validation
+    - column: "trip_distance"
+      expectations:
+        - type: "expect_column_values_to_be_between"
+          min: 0
+          max: 100  # NYC trips shouldn't exceed 100 miles
+          mostly: 0.995
+        - type: "expect_column_values_to_not_be_null"
+
+    # Passenger count validation
+    - column: "passenger_count"
+      expectations:
+        - type: "expect_column_values_to_be_in_set"
+          value_set: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        - type: "expect_column_values_to_be_between"
+          min: 1
+          max: 9
+          mostly: 0.99
+
+    # Payment type validation
+    - column: "payment_type"
+      expectations:
+        - type: "expect_column_values_to_be_in_set"
+          value_set: [1, 2, 3, 4, 5, 6]  # Valid payment codes
+
+    # Total amount validation
+    - column: "total_amount"
+      expectations:
+        - type: "expect_column_values_to_be_between"
+          min: 0
+          max: 1000
+          mostly: 0.99
+
+    # Datetime validation
+    - column: "tpep_pickup_datetime"
+      expectations:
+        - type: "expect_column_values_to_not_be_null"
+        - type: "expect_column_values_to_be_of_type"
+          type_: "datetime64[ns]"
+
+    - column: "tpep_dropoff_datetime"
+      expectations:
+        - type: "expect_column_values_to_not_be_null"
+
+  # AI-Powered Semantic Validation
+  ai_checks:
+    - name: "fare_distance_consistency"
+      type: "semantic_consistency"
+      columns: ["trip_distance", "fare_amount", "trip_duration"]
+      prompt: |
+        Check if fare_amount is reasonable given trip_distance and trip_duration.
+        NYC taxi base fare is $3.00 + $0.70 per 1/5 mile.
+        Flag trips where fare seems too high or too low for the distance/time.
+
+    - name: "temporal_patterns"
+      type: "pattern_detection"
+      column: "tpep_pickup_datetime"
+      prompt: |
+        Identify unusual temporal patterns:
+        - Are there gaps in the time series?
+        - Unexpected spikes or drops in trip volume?
+        - Weekend vs weekday patterns normal?
+
+    - name: "location_anomalies"
+      type: "anomaly_detection"
+      columns: ["PULocationID", "DOLocationID"]
+      prompt: |
+        Check for location-based anomalies:
+        - Invalid location IDs (outside valid range)
+        - Pickup = Dropoff (zero-distance trips)
+        - Unusual location pairs
+
+    - name: "outlier_investigation"
+      type: "outlier_explanation"
+      enabled: true
+      columns: ["fare_amount", "trip_distance", "total_amount"]
+      threshold_sigma: 3
+      prompt: |
+        For detected outliers, explain:
+        - Are they legitimate extreme values or errors?
+        - What's the likely cause?
+        - Should they be kept, removed, or capped?
+
+# LLM Configuration
+llm:
+  provider: "anthropic"  # or "openai"
+  model: "claude-3-5-sonnet-20241022"  # or "gpt-4-turbo-preview"
+  temperature: 0.3
+  max_tokens: 2000
+
+  # Cost controls
+  max_cost_per_run: 5.00  # USD
+  enable_caching: true
+
+# Thresholds
+thresholds:
+  outlier_sigma: 3.0
+  missing_value_threshold: 0.05  # Flag if >5% missing
+  duplicate_threshold: 0.01  # Flag if >1% duplicates
+
+# Output Configuration
+output:
+  format: "markdown"  # markdown, html, json
+  save_path: "results/validation_report.md"
+  include_visualizations: true
+  include_ai_explanations: true
+
+# Alerts
+alerts:
+  enabled: false  # Set to true in production
+  channels:
+    - type: "console"
+      level: "warning"
+
+    # Uncomment for production
+    # - type: "slack"
+    #   webhook: "${SLACK_WEBHOOK_URL}"
+    #   level: "error"
+    #
+    # - type: "email"
+    #   recipients: ["data-team@company.com"]
+    #   level: "critical"
+
+# Metadata
+metadata:
+  owner: "Data Engineering Team"
+  last_updated: "2025-11-08"
+  tags: ["transportation", "nyc", "taxi", "production"]

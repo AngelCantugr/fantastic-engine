@@ -1,0 +1,61 @@
+# Core ML
+scikit-learn==1.4.0
+xgboost==2.0.3
+lightgbm==4.3.0
+optuna==3.5.0
+
+# Feature Store
+feast[redis]==0.35.0
+redis==5.0.1
+
+# MLOps
+mlflow==2.9.2
+evidently==0.4.14
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.3
+pyarrow==14.0.2
+
+# API
+fastapi==0.109.0
+uvicorn[standard]==0.26.0
+pydantic==2.5.3
+
+# Database
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# Orchestration
+apache-airflow==2.8.1
+apache-airflow-providers-postgres==5.9.0
+
+# Spark (optional, for large-scale)
+pyspark==3.5.0
+
+# Monitoring
+prometheus-client==0.19.0
+grafana-api==1.0.3
+
+# Testing
+pytest==7.4.4
+pytest-cov==4.1.0
+great-expectations==0.18.8
+
+# Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1
+click==8.1.7
+rich==13.7.0
+loguru==0.7.2
+tqdm==4.66.1
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.1
+plotly==5.18.0
+
+# Data Versioning
+dvc==3.37.0
+dvc-s3==3.1.0

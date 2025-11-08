@@ -121,6 +121,16 @@ nav:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
     - TickTick Priority Agent: projects/ticktick-priority-agent.md
+    - Data + AI Engineering:
+      - Overview: ../projects/data-ai-engineering/README.md
+      - Datasets: ../projects/data-ai-engineering/docs/DATASETS.md
+      - Guides:
+        - Getting Started: ../projects/data-ai-engineering/docs/guides/01-getting-started.md
+      - Study Plans:
+        - ADHD-Friendly Guide: ../projects/data-ai-engineering/docs/study-plans/adhd-friendly-guide.md
+      - Use Cases:
+        - 'Use Case #2: MLOps Pipeline': ../projects/data-ai-engineering/use-cases/02-mlops-pipeline/README.md
+        - 'Use Case #3: AI Data Quality': ../projects/data-ai-engineering/use-cases/04-data-quality-ai/README.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
