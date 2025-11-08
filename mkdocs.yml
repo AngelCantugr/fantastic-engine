@@ -146,6 +146,20 @@ nav:
         - 28 - Tech Blog Writer: experiments/ai-engineer-learning/agents/28_tech_blog_writer/README.md
         - 29 - Complexity Analyzer: experiments/ai-engineer-learning/agents/29_complexity_analyzer/README.md
         - 30 - Interactive Debugger: experiments/ai-engineer-learning/agents/30_interactive_debugger/README.md
+    - AI Technologies 2025:
+      - Overview: experiments/ai-technologies-2025/README.md
+      - Theory:
+        - Introduction: experiments/ai-technologies-2025/docs/01-overview.md
+        - Agent Protocols: experiments/ai-technologies-2025/docs/02-agent-protocols.md
+        - RAG Systems: experiments/ai-technologies-2025/docs/03-rag-systems.md
+        - Multi-Agent Frameworks: experiments/ai-technologies-2025/docs/04-multi-agent-frameworks.md
+        - Best Practices: experiments/ai-technologies-2025/docs/05-best-practices.md
+      - Practical Examples:
+        - RAG Implementation: experiments/ai-technologies-2025/examples/practical/rag-implementation/README.md
+        - MCP Server: experiments/ai-technologies-2025/examples/practical/mcp-server/README.md
+        - Multi-Agent Crew: experiments/ai-technologies-2025/examples/practical/multi-agent-crew/README.md
+      - Experimental:
+        - Hybrid RAG + Agents: experiments/ai-technologies-2025/examples/experimental/hybrid-rag-agents/README.md
     - AI Productivity Orchestration:
       - Overview: experiments/ai-productivity-orchestration/README.md
       - Quick Start: experiments/ai-productivity-orchestration/quick-start.md
@@ -160,6 +174,22 @@ nav:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
     - TickTick Priority Agent: projects/ticktick-priority-agent.md
+    - Multi-Agent Orchestration:
+      - Overview: projects/multi-agent-orchestration/README.md
+      - Introduction: projects/multi-agent-orchestration/docs/01-introduction.md
+      - Pattern Comparison: projects/multi-agent-orchestration/docs/02-pattern-comparison.md
+      - Swarm Pattern: projects/multi-agent-orchestration/docs/03-swarm-pattern.md
+      - Supervisor Pattern: projects/multi-agent-orchestration/docs/04-supervisor-pattern.md
+      - Graph Pattern: projects/multi-agent-orchestration/docs/05-graph-pattern.md
+      - Sequential Pattern: projects/multi-agent-orchestration/docs/06-sequential-pattern.md
+      - Reflection Pattern: projects/multi-agent-orchestration/docs/07-reflection-pattern.md
+      - Plan-Execute Pattern: projects/multi-agent-orchestration/docs/08-plan-execute-pattern.md
+      - Router Pattern: projects/multi-agent-orchestration/docs/09-router-pattern.md
+      - Parallel Pattern: projects/multi-agent-orchestration/docs/10-parallel-pattern.md
+      - Choosing a Pattern: projects/multi-agent-orchestration/docs/11-choosing-a-pattern.md
+    - OAuth 2.0 for MCP & Agents:
+      - Overview: projects/oauth2-mcp-exploration.md
+      - Learning Guide: projects/oauth2-learning-guide.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
