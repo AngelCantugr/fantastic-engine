@@ -107,6 +107,21 @@ nav:
     - Context7 MCP Experiment: experiments/context7-mcp-experiment.md
     - Goose Documentation Management: experiments/goose-doc-management.md
     - SpecKit Learning Guide: experiments/speckit-learning-guide.md
+    - AI Engineer Learning Path:
+      - Overview: experiments/ai-engineer-learning/docs/index.md
+      - Quick Start: experiments/ai-engineer-learning/QUICKSTART.md
+      - Main Guide: experiments/ai-engineer-learning/README.md
+      - Agents:
+        - 01 - Simple Chat: experiments/ai-engineer-learning/agents/01_simple_chat/README.md
+        - 02 - Code Review: experiments/ai-engineer-learning/agents/02_code_review/README.md
+        - 03 - Commit Messages: experiments/ai-engineer-learning/agents/03_commit_message/README.md
+        - 04 - Documentation Writer: experiments/ai-engineer-learning/agents/04_doc_writer/README.md
+        - 05 - Test Generator: experiments/ai-engineer-learning/agents/05_test_generator/README.md
+        - 06 - PR Analyzer: experiments/ai-engineer-learning/agents/06_pr_analyzer/README.md
+        - 07 - Refactoring Suggester: experiments/ai-engineer-learning/agents/07_refactoring_suggester/README.md
+        - 08 - Architecture Advisor: experiments/ai-engineer-learning/agents/08_architecture_advisor/README.md
+        - 09 - Bug Hunter: experiments/ai-engineer-learning/agents/09_bug_hunter/README.md
+        - 10 - Pair Programmer: experiments/ai-engineer-learning/agents/10_pair_programmer/README.md
     - AI Productivity Orchestration:
       - Overview: experiments/ai-productivity-orchestration/README.md
       - Quick Start: experiments/ai-productivity-orchestration/quick-start.md
