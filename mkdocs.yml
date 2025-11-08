@@ -134,6 +134,9 @@ nav:
       - Router Pattern: projects/multi-agent-orchestration/docs/09-router-pattern.md
       - Parallel Pattern: projects/multi-agent-orchestration/docs/10-parallel-pattern.md
       - Choosing a Pattern: projects/multi-agent-orchestration/docs/11-choosing-a-pattern.md
+    - OAuth 2.0 for MCP & Agents:
+      - Overview: projects/oauth2-mcp-exploration.md
+      - Learning Guide: projects/oauth2-learning-guide.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
