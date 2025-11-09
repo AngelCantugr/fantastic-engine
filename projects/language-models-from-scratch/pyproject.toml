@@ -1,0 +1,32 @@
+[project]
+name = "language-models-from-scratch"
+version = "0.1.0"
+description = "Educational language models with progressive complexity - from beginner to expert"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "tqdm>=4.65.0",
+    "datasets>=2.14.0",
+    "tiktoken>=0.5.0",
+    "transformers>=4.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.25.0",
+    "pytest>=7.4.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.25.0",
+    "pytest>=7.4.0",
+]
