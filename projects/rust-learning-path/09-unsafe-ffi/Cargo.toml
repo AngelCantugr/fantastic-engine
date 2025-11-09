@@ -1,0 +1,10 @@
+[package]
+name = "unsafe-ffi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+# Optional: Uncomment to build as a C-compatible library
+# [lib]
+# crate-type = ["cdylib", "rlib"]
