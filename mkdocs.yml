@@ -180,6 +180,40 @@ nav:
       - '01 - Advanced Type Utilities': ../projects/advanced-typescript-learning/src/01-advanced-type-utilities/README.md
       - '02 - Type-Safe Event Emitter': ../projects/advanced-typescript-learning/src/02-type-safe-event-emitter/README.md
       - '03 - Fluent API Builder': ../projects/advanced-typescript-learning/src/03-fluent-api-builder/README.md
+    - Advanced Java Learning:
+      - Overview: ../projects/advanced-java-learning/README.md
+      - Documentation:
+        - '01 - Custom Collections': ../projects/advanced-java-learning/docs/01-custom-collections.md
+        - '02 - NIO.2 Explorer': ../projects/advanced-java-learning/docs/02-nio-explorer.md
+        - '03 - Reflection & Annotations': ../projects/advanced-java-learning/docs/03-reflection-annotations.md
+        - 'Complete Projects Guide (4-20)': ../projects/advanced-java-learning/docs/complete-projects-guide.md
+        - Quick Reference: ../projects/advanced-java-learning/docs/quick-reference.md
+    - Advanced Python Learning:
+      - Overview: ../projects/advanced-python-learning/README.md
+      - Intermediate (1-5):
+        - 01 - Metaclasses: ../projects/advanced-python-learning/01-metaclasses/README.md
+        - 02 - Descriptors: ../projects/advanced-python-learning/02-descriptors/README.md
+        - 03 - Context Managers: ../projects/advanced-python-learning/03-context-managers/README.md
+        - 04 - Advanced Decorators: ../projects/advanced-python-learning/04-decorators-advanced/README.md
+        - 05 - Generators & Coroutines: ../projects/advanced-python-learning/05-generators-coroutines/README.md
+      - Upper Intermediate (6-10):
+        - 06 - Async Programming: ../projects/advanced-python-learning/06-async-programming/README.md
+        - 07 - Multiprocessing: ../projects/advanced-python-learning/07-multiprocessing/README.md
+        - 08 - Memory Profiling: ../projects/advanced-python-learning/08-memory-profiling/README.md
+        - 09 - Custom Iterators: ../projects/advanced-python-learning/09-custom-iterators/README.md
+        - 10 - Dataclasses & Protocols: ../projects/advanced-python-learning/10-dataclass-protocols/README.md
+      - Advanced (11-15):
+        - 11 - Type System Advanced: ../projects/advanced-python-learning/11-type-system-advanced/README.md
+        - 12 - AST Manipulation: ../projects/advanced-python-learning/12-ast-manipulation/README.md
+        - 13 - Bytecode Optimization: ../projects/advanced-python-learning/13-bytecode-optimization/README.md
+        - 14 - C Extensions: ../projects/advanced-python-learning/14-c-extensions/README.md
+        - 15 - Metaprogramming: ../projects/advanced-python-learning/15-metaprogramming/README.md
+      - Expert (16-20):
+        - 16 - Custom Import System: ../projects/advanced-python-learning/16-custom-import-system/README.md
+        - 17 - Memory Management: ../projects/advanced-python-learning/17-memory-management/README.md
+        - 18 - Concurrent Futures: ../projects/advanced-python-learning/18-concurrent-futures/README.md
+        - 19 - Distributed Computing: ../projects/advanced-python-learning/19-distributed-computing/README.md
+        - 20 - Language Implementation: ../projects/advanced-python-learning/20-language-implementation/README.md
     - Language Models from Scratch:
       - Overview: ../projects/language-models-from-scratch/README.md
       - Learning Path: ../projects/language-models-from-scratch/docs/learning-path.md
@@ -234,6 +268,39 @@ nav:
       - Intermediate Examples:
         - Advanced LoRA: ../projects/model-fine-tuning-techniques/examples/intermediate/lora/README.md
         - QLoRA: ../projects/model-fine-tuning-techniques/examples/intermediate/qlora/README.md
+    - Advanced Kotlin Learning:
+      - Overview: ../projects/advanced-kotlin-learning/README.md
+      - Learning Plan: ../projects/advanced-kotlin-learning/LEARNING_PLAN.md
+      - 'Phase 1: Advanced Language Features':
+        - '01 - Type-Safe Builders':
+          - Overview: ../projects/advanced-kotlin-learning/01-type-safe-builders/README.md
+          - Concepts: ../projects/advanced-kotlin-learning/01-type-safe-builders/docs/01-concepts.md
+          - Usage: ../projects/advanced-kotlin-learning/01-type-safe-builders/docs/02-usage.md
+          - Scenarios: ../projects/advanced-kotlin-learning/01-type-safe-builders/docs/03-scenarios.md
+          - Exercises: ../projects/advanced-kotlin-learning/01-type-safe-builders/docs/04-exercises.md
+        - '02 - Coroutines & Flow Advanced': ../projects/advanced-kotlin-learning/02-coroutines-flow-advanced/README.md
+        - '03 - Sealed Classes & ADT': ../projects/advanced-kotlin-learning/03-sealed-classes-adt/README.md
+        - '04 - Inline & Value Classes': ../projects/advanced-kotlin-learning/04-inline-value-classes/README.md
+        - '05 - Delegation Patterns': ../projects/advanced-kotlin-learning/05-delegation-patterns/README.md
+        - '06 - Extension Functions & Receivers': ../projects/advanced-kotlin-learning/06-extension-functions-receivers/README.md
+        - '07 - Collections & Sequences': ../projects/advanced-kotlin-learning/07-collections-sequences/README.md
+      - 'Phase 2: Advanced Patterns & Tools':
+        - '08 - Context Receivers': ../projects/advanced-kotlin-learning/08-context-receivers/README.md
+        - '09 - Compiler Plugins & KSP': ../projects/advanced-kotlin-learning/09-compiler-plugins-ksp/README.md
+        - '10 - Multiplatform Architecture': ../projects/advanced-kotlin-learning/10-multiplatform-architecture/README.md
+        - '11 - Contracts & Smart Casts': ../projects/advanced-kotlin-learning/11-contracts-smart-casts/README.md
+        - '12 - Reflection & KClass': ../projects/advanced-kotlin-learning/12-reflection-kclass/README.md
+        - '13 - Annotation Processing': ../projects/advanced-kotlin-learning/13-annotation-processing/README.md
+        - '14 - Arrow Functional Programming': ../projects/advanced-kotlin-learning/14-arrow-functional-programming/README.md
+      - 'Phase 3: Expert Mastery':
+        - '15 - Custom Coroutine Contexts': ../projects/advanced-kotlin-learning/15-custom-coroutine-contexts/README.md
+        - '16 - Memory & Performance': ../projects/advanced-kotlin-learning/16-memory-performance/README.md
+        - '17 - Gradle Plugin Development': ../projects/advanced-kotlin-learning/17-gradle-plugin-development/README.md
+        - '18 - Metaprogramming & Code Generation': ../projects/advanced-kotlin-learning/18-metaprogramming-codegen/README.md
+        - '19 - Advanced Type System': ../projects/advanced-kotlin-learning/19-advanced-type-system/README.md
+        - '20 - Kotlin DSL Framework (Capstone)': ../projects/advanced-kotlin-learning/20-kotlin-dsl-framework/README.md
+    - Advanced Go Learning:
+      - Overview: projects/advanced-go-learning.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
