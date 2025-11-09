@@ -254,6 +254,8 @@ nav:
       - Intermediate Examples:
         - Advanced LoRA: ../projects/model-fine-tuning-techniques/examples/intermediate/lora/README.md
         - QLoRA: ../projects/model-fine-tuning-techniques/examples/intermediate/qlora/README.md
+    - Advanced Go Learning:
+      - Overview: projects/advanced-go-learning.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
