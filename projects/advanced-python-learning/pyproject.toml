@@ -1,0 +1,50 @@
+[project]
+name = "advanced-python-learning"
+version = "0.1.0"
+description = "20 Progressive Projects for Advanced Python Mastery"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "black>=24.0.0",
+    "mypy>=1.8.0",
+    "ruff>=0.1.0",
+    "memory-profiler>=0.61.0",
+    "line-profiler>=4.1.0",
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "typing-extensions>=4.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipython>=8.20.0",
+    "jupyter>=1.0.0",
+    "pytest-cov>=4.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+asyncio_mode = "auto"
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
