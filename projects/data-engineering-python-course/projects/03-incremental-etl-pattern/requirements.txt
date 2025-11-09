@@ -1,0 +1,32 @@
+# Incremental ETL Pattern Dependencies
+
+# Core Data Libraries
+pandas>=2.1.0
+numpy>=1.24.0
+pyarrow>=14.0.0
+
+# Database Connectivity
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0  # PostgreSQL
+pymysql>=1.1.0          # MySQL (optional)
+
+# State Management
+pydantic>=2.0.0
+
+# Hashing and Utilities
+hashlib  # Built-in
+python-dateutil>=2.8.0
+
+# Logging
+loguru>=0.7.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Performance
+dask[complete]>=2023.12.0  # For large-scale processing (optional)
+
+# Optional: For specific database dialects
+# cx_Oracle>=8.3.0        # Oracle
+# pymssql>=2.2.0          # SQL Server

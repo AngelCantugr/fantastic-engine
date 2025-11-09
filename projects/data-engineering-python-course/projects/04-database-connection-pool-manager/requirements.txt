@@ -1,0 +1,30 @@
+# Database Connection Pool Manager Dependencies
+
+# Core Database Libraries
+sqlalchemy>=2.0.0
+
+# Database Drivers
+psycopg2-binary>=2.9.0  # PostgreSQL
+pymysql>=1.1.0          # MySQL
+cx-Oracle>=8.3.0        # Oracle (optional)
+
+# Threading and Concurrency
+threading  # Built-in
+
+# Monitoring and Metrics
+prometheus-client>=0.19.0  # For metrics export (optional)
+
+# Logging
+loguru>=0.7.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-timeout>=2.2.0
+
+# Type Hints
+typing-extensions>=4.8.0
+
+# Optional: Advanced Features
+# redis>=5.0.0           # For distributed locking
+# circuitbreaker>=1.4.0  # Circuit breaker implementation

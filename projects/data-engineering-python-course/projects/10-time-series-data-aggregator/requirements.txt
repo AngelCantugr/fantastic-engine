@@ -1,0 +1,56 @@
+# Project 10: Time-Series Data Aggregator - Dependencies
+
+# Core Time-Series Processing
+pandas>=2.1.0
+numpy>=1.24.0
+pyarrow>=14.0.0  # Parquet for efficient storage
+
+# Time-Series Specific Libraries
+statsmodels>=0.14.0  # Statistical models, seasonal decomposition
+prophet>=1.1.5  # Facebook's time-series forecasting (optional)
+
+# Time-Series Databases (Optional)
+# influxdb-client>=1.38.0  # InfluxDB client
+# timescaledb>=0.1.0  # TimescaleDB extension for PostgreSQL
+
+# Data Storage
+sqlalchemy>=2.0.0  # Database ORM
+psycopg2-binary>=2.9.0  # PostgreSQL support
+
+# Performance & Optimization
+numba>=0.58.0  # JIT compilation for fast numerical operations
+cython>=3.0.0  # C-extensions for performance
+
+# Resampling & Interpolation
+scipy>=1.11.0  # Scientific computing, interpolation
+
+# Visualization
+matplotlib>=3.7.0  # Plotting
+plotly>=5.17.0  # Interactive visualizations
+seaborn>=0.12.0  # Statistical visualizations
+
+# Configuration
+pyyaml>=6.0.1  # YAML config files
+python-dotenv>=1.0.0  # Environment variables
+
+# Logging & Monitoring
+structlog>=23.1.0  # Structured logging
+prometheus-client>=0.19.0  # Prometheus metrics export
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-benchmark>=4.0.0  # Performance benchmarking
+
+# Development
+black>=23.7.0  # Code formatting
+flake8>=6.1.0  # Linting
+mypy>=1.5.0  # Type checking
+ipython>=8.14.0  # Interactive shell
+jupyter>=1.0.0  # Notebooks
+
+# Optional: Advanced Features
+# arctic>=1.82.0  # High-performance time-series storage (MongoDB-based)
+# kats>=0.2.0  # Time-series analysis by Meta
+# tsfresh>=0.20.0  # Time-series feature extraction
+# sktime>=0.24.0  # Unified time-series ML framework

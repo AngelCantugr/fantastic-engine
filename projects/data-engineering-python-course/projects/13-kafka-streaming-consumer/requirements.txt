@@ -1,0 +1,31 @@
+# Project 13: Kafka Streaming Consumer
+
+# Kafka client
+confluent-kafka==2.3.0
+
+# Schema registry and serialization
+confluent-kafka[avro,protobuf,json]==2.3.0
+avro-python3==1.11.3
+fastavro==1.9.4
+protobuf==4.25.2
+
+# Schema validation
+jsonschema==4.21.0
+
+# Data processing
+pandas==2.1.4
+
+# Database connectivity for exactly-once semantics
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+
+# Monitoring and metrics
+prometheus-client==0.19.0
+
+# Development and testing
+pytest==7.4.3
+pytest-kafka==0.6.0
+testcontainers==3.7.1  # For testing with Docker containers
+
+# Utilities
+python-dotenv==1.0.0

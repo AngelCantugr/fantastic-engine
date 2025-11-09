@@ -1,0 +1,27 @@
+# Project 11: Distributed ETL with Dask
+
+# Core Dask dependencies
+dask[complete]==2024.1.0
+distributed==2024.1.0
+
+# Data processing
+pandas==2.1.4
+numpy==1.26.2
+pyarrow==14.0.2
+
+# Storage formats
+fastparquet==2024.2.0
+
+# Database connectivity
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+
+# Monitoring and visualization
+bokeh==3.3.2  # For Dask dashboard
+
+# Performance profiling
+psutil==5.9.7
+
+# Development and testing
+pytest==7.4.3
+pytest-cov==4.1.0

@@ -1,0 +1,32 @@
+# Project 14: Apache Airflow DAG Builder
+
+# Apache Airflow
+apache-airflow==2.8.1
+
+# Providers for various integrations
+apache-airflow-providers-postgres==5.10.0
+apache-airflow-providers-amazon==8.17.0
+apache-airflow-providers-google==10.14.0
+apache-airflow-providers-http==4.8.0
+apache-airflow-providers-ftp==3.7.0
+apache-airflow-providers-sftp==4.9.0
+
+# Data processing
+pandas==2.1.4
+numpy==1.26.2
+pyarrow==14.0.2
+
+# Database connectivity
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+
+# For Celery executor (optional, for production)
+celery==5.3.4
+redis==5.0.1
+
+# Testing
+pytest==7.4.3
+pytest-airflow==0.0.7
+
+# Utilities
+python-dotenv==1.0.0

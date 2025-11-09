@@ -1,0 +1,46 @@
+# Project 19: Real-time Deduplication - Requirements
+
+# Stream Processing
+faust-streaming==0.10.15  # Fork of Faust with Python 3.11+ support
+kafka-python==2.0.2
+confluent-kafka==2.3.0
+
+# State Management
+rocksdb==0.7.0  # Python bindings for RocksDB
+
+# Hashing and Probabilistic Data Structures
+mmh3==4.1.0  # MurmurHash3 for Bloom filters
+pybloom-live==4.0.0  # Bloom filter implementation
+pyprobables==0.6.0  # Count-Min Sketch and other sketches
+
+# Data Processing
+pandas==2.1.4
+pyarrow==14.0.1
+numpy==1.26.2
+
+# Serialization
+avro-python3==1.10.2
+msgpack==1.0.7
+
+# Monitoring
+prometheus-client==0.19.0
+
+# Utilities
+python-dateutil==2.8.2
+cachetools==5.3.2
+
+# Async Support
+aiohttp==3.9.1
+asyncio==3.4.3
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+aiokafka==0.9.0  # For testing async Kafka
+
+# Development
+black==23.12.1
+flake8==7.0.0
+mypy==1.7.1

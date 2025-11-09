@@ -1,0 +1,62 @@
+# Project 08: Column-Store Query Optimizer - Dependencies
+
+# Core Database Engine
+duckdb>=0.9.0  # Fast in-process analytical database
+duckdb-engine>=0.9.0  # SQLAlchemy support for DuckDB
+
+# Data Processing
+pandas>=2.1.0
+numpy>=1.24.0
+pyarrow>=14.0.0  # Required for Parquet support
+
+# SQL Parsing & Analysis
+sqlparse>=0.4.4  # SQL parsing and formatting
+sqlglot>=19.0.0  # SQL parser, optimizer, and transpiler
+
+# Performance Profiling
+py-spy>=0.3.14  # Sampling profiler
+memory-profiler>=0.61.0  # Memory usage profiling
+psutil>=5.9.0  # System and process utilities
+
+# Visualization
+matplotlib>=3.7.0  # Query performance visualization
+seaborn>=0.12.0  # Statistical visualizations
+plotly>=5.17.0  # Interactive visualizations
+
+# Database Comparison (Optional)
+# sqlalchemy>=2.0.0  # For comparing with other databases
+# psycopg2-binary>=2.9.0  # PostgreSQL comparison
+# clickhouse-driver>=0.2.6  # ClickHouse comparison
+
+# Benchmarking
+pytest-benchmark>=4.0.0  # Performance benchmarking in tests
+
+# Data Generation
+faker>=20.0.0  # Generate synthetic test data
+mimesis>=11.0.0  # Alternative data generator
+
+# Query Optimization Tools
+pglast>=5.0  # PostgreSQL query parser (for learning)
+
+# Logging & Monitoring
+structlog>=23.1.0  # Structured logging
+python-json-logger>=2.0.7  # JSON logging
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-xdist>=3.3.1  # Parallel test execution
+
+# Development
+black>=23.7.0  # Code formatting
+flake8>=6.1.0  # Linting
+mypy>=1.5.0  # Type checking
+ipython>=8.14.0  # Interactive shell
+jupyter>=1.0.0  # Notebooks for exploration
+
+# Documentation
+tabulate>=0.9.0  # Pretty-print tabular data
+
+# Optional: Advanced Analytics
+# polars>=0.19.0  # Alternative fast DataFrame library (comparison)
+# apache-arrow>=14.0.0  # Arrow for zero-copy data sharing
