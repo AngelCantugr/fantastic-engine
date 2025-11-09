@@ -1,0 +1,70 @@
+# Project 07: Multi-Source Data Merger - Dependencies
+
+# Core Data Processing
+pandas>=2.1.0
+numpy>=1.24.0
+pyarrow>=14.0.0
+
+# Database Connectors
+sqlalchemy>=2.0.0  # Database ORM
+psycopg2-binary>=2.9.0  # PostgreSQL
+pymysql>=1.1.0  # MySQL
+cx-Oracle>=8.3.0  # Oracle (optional)
+pyodbc>=5.0.0  # ODBC driver for various databases
+
+# API & Web
+requests>=2.31.0  # HTTP library for REST APIs
+httpx>=0.25.0  # Async HTTP client
+aiohttp>=3.9.0  # Async HTTP client/server
+
+# Schema & Data Validation
+pydantic>=2.4.0  # Data validation using Python type hints
+jsonschema>=4.19.0  # JSON schema validation
+marshmallow>=3.20.0  # Object serialization/deserialization
+
+# Configuration Management
+pyyaml>=6.0.1  # YAML configuration files
+python-dotenv>=1.0.0  # Environment variable management
+configparser>=6.0.0  # INI file parsing
+
+# Data Quality
+great-expectations>=0.18.0  # Data validation framework
+pandera>=0.17.0  # Statistical data validation
+
+# Master Data Management
+recordlinkage>=0.16.0  # Entity resolution (optional, if combining with Project 06)
+
+# Data Transformation
+jsonpath-ng>=1.6.0  # JSON path queries
+xmltodict>=0.13.0  # XML to dict conversion
+openpyxl>=3.1.0  # Excel file support
+
+# Caching & Performance
+redis>=5.0.0  # Caching layer
+cachetools>=5.3.0  # Caching utilities
+
+# Logging & Monitoring
+structlog>=23.1.0  # Structured logging
+python-json-logger>=2.0.7  # JSON logging
+
+# Lineage & Metadata
+networkx>=3.1  # Graph structures for lineage
+graphviz>=0.20.1  # Lineage visualization
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+pytest-asyncio>=0.21.0  # Async testing
+
+# Development
+black>=23.7.0  # Code formatting
+flake8>=6.1.0  # Linting
+mypy>=1.5.0  # Type checking
+ipython>=8.14.0  # Interactive shell
+jupyter>=1.0.0  # Notebooks
+
+# Optional: Advanced Features
+# apache-airflow>=2.7.0  # Orchestration (if integrating with Airflow)
+# prefect>=2.13.0  # Alternative orchestration
+# dbt-core>=1.6.0  # Data transformation tool

@@ -1,0 +1,74 @@
+# Project 09: Data Lineage Tracker - Dependencies
+
+# Graph Processing
+networkx>=3.1  # Graph data structures and algorithms
+python-igraph>=0.11.0  # Alternative high-performance graph library (optional)
+
+# SQL Parsing
+sqlparse>=0.4.4  # SQL parsing and formatting
+sqlglot>=19.0.0  # Advanced SQL parser, optimizer, and transpiler
+pglast>=5.0  # PostgreSQL SQL parser
+
+# Visualization
+graphviz>=0.20.1  # Lineage graph visualization
+matplotlib>=3.7.0  # Additional plotting
+plotly>=5.17.0  # Interactive visualizations
+
+# Data Processing
+pandas>=2.1.0
+numpy>=1.24.0
+
+# Metadata Management
+sqlalchemy>=2.0.0  # Database ORM for metadata storage
+alembic>=1.12.0  # Database migration tool
+
+# Database Drivers (for metadata storage)
+psycopg2-binary>=2.9.0  # PostgreSQL
+pymysql>=1.1.0  # MySQL
+
+# Lineage Standards
+openlineage-python>=1.0.0  # OpenLineage standard implementation
+
+# Schema Analysis
+pyarrow>=14.0.0  # Schema introspection for Parquet
+fastavro>=1.9.0  # Schema introspection for Avro
+
+# REST API (for lineage service)
+fastapi>=0.104.0  # Web framework
+uvicorn>=0.24.0  # ASGI server
+pydantic>=2.4.0  # Data validation
+
+# Configuration
+pyyaml>=6.0.1  # YAML configuration
+python-dotenv>=1.0.0  # Environment variables
+
+# CLI
+click>=8.1.7  # Command-line interface
+rich>=13.6.0  # Rich terminal output
+tabulate>=0.9.0  # Pretty-print tables
+
+# Logging & Monitoring
+structlog>=23.1.0  # Structured logging
+python-json-logger>=2.0.7  # JSON logging
+
+# Data Catalog Integration (Optional)
+# apache-atlas-client>=0.1.0  # Apache Atlas integration
+# datahub>=0.11.0  # DataHub integration
+# amundsen-common>=3.0.0  # Amundsen integration
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+
+# Development
+black>=23.7.0  # Code formatting
+flake8>=6.1.0  # Linting
+mypy>=1.5.0  # Type checking
+ipython>=8.14.0  # Interactive shell
+jupyter>=1.0.0  # Notebooks
+
+# Optional: Advanced Features
+# neo4j>=5.13.0  # Graph database for large-scale lineage
+# spacy>=3.7.0  # NLP for metadata extraction
+# transformers>=4.35.0  # ML models for lineage prediction

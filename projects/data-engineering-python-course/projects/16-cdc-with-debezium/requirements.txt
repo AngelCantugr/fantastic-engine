@@ -1,0 +1,36 @@
+# Project 16: CDC with Debezium - Requirements
+
+# Core Dependencies
+confluent-kafka[avro]==2.3.0
+psycopg2-binary==2.9.9
+requests==2.31.0
+
+# Schema Registry and Serialization
+avro-python3==1.10.2
+fastavro==1.9.0
+
+# Optional: Additional Database Connectors
+pymongo==4.6.0  # For MongoDB CDC examples
+pymysql==1.1.0  # For MySQL CDC examples
+
+# Data Processing
+pandas==2.1.4
+pyarrow==14.0.1
+
+# Caching and Search (for event handler examples)
+redis==5.0.1
+elasticsearch==8.11.0
+
+# Monitoring and Logging
+prometheus-client==0.19.0
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+testcontainers==3.7.1  # For integration tests with Docker
+
+# Development
+black==23.12.1
+flake8==7.0.0
+mypy==1.7.1

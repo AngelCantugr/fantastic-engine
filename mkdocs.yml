@@ -313,6 +313,51 @@ nav:
         - '20 - Kotlin DSL Framework (Capstone)': ../projects/advanced-kotlin-learning/20-kotlin-dsl-framework/README.md
     - Advanced Go Learning:
       - Overview: projects/advanced-go-learning.md
+    - Data Engineering with Python:
+      - Overview: ../projects/data-engineering-python-course/README.md
+      - Learning Plan: ../projects/data-engineering-python-course/LEARNING_PLAN.md
+      - Concepts:
+        - Data Formats: ../projects/data-engineering-python-course/docs/concepts/data-formats.md
+        - ETL Patterns: ../projects/data-engineering-python-course/docs/concepts/etl-patterns.md
+        - Distributed Computing: ../projects/data-engineering-python-course/docs/concepts/distributed-computing.md
+      - Best Practices:
+        - Data Quality: ../projects/data-engineering-python-course/docs/best-practices/data-quality.md
+        - Performance Optimization: ../projects/data-engineering-python-course/docs/best-practices/performance-optimization.md
+      - Resources:
+        - Learning Resources: ../projects/data-engineering-python-course/docs/resources/learning-resources.md
+      - 'Tier 1: Foundation (1-10)':
+        - '01 - CSV to Parquet Pipeline': ../projects/data-engineering-python-course/projects/01-csv-to-parquet-pipeline/README.md
+        - '02 - Data Validation Framework': ../projects/data-engineering-python-course/projects/02-data-validation-framework/README.md
+        - '03 - Incremental ETL Pattern': ../projects/data-engineering-python-course/projects/03-incremental-etl-pattern/README.md
+        - '04 - Database Connection Pool Manager': ../projects/data-engineering-python-course/projects/04-database-connection-pool-manager/README.md
+        - '05 - Slowly Changing Dimensions': ../projects/data-engineering-python-course/projects/05-slowly-changing-dimensions/README.md
+        - '06 - Data Deduplication Engine': ../projects/data-engineering-python-course/projects/06-data-deduplication-engine/README.md
+        - '07 - Multi-Source Data Merger': ../projects/data-engineering-python-course/projects/07-multi-source-data-merger/README.md
+        - '08 - Column-Store Query Optimizer': ../projects/data-engineering-python-course/projects/08-column-store-query-optimizer/README.md
+        - '09 - Data Lineage Tracker': ../projects/data-engineering-python-course/projects/09-data-lineage-tracker/README.md
+        - '10 - Time-Series Data Aggregator': ../projects/data-engineering-python-course/projects/10-time-series-data-aggregator/README.md
+      - 'Tier 2: Advanced Intermediate (11-20)':
+        - '11 - Distributed ETL with Dask': ../projects/data-engineering-python-course/projects/11-distributed-etl-with-dask/README.md
+        - '12 - Apache Spark Pipeline': ../projects/data-engineering-python-course/projects/12-apache-spark-pipeline/README.md
+        - '13 - Kafka Streaming Consumer': ../projects/data-engineering-python-course/projects/13-kafka-streaming-consumer/README.md
+        - '14 - Apache Airflow DAG Builder': ../projects/data-engineering-python-course/projects/14-apache-airflow-dag-builder/README.md
+        - '15 - Delta Lake Implementation': ../projects/data-engineering-python-course/projects/15-delta-lake-implementation/README.md
+        - '16 - CDC with Debezium': ../projects/data-engineering-python-course/projects/16-cdc-with-debezium/README.md
+        - '17 - API Rate Limiter & Backfill': ../projects/data-engineering-python-course/projects/17-api-rate-limiter-backfill/README.md
+        - '18 - S3 Data Lake Organization': ../projects/data-engineering-python-course/projects/18-s3-data-lake-organization/README.md
+        - '19 - Real-time Deduplication': ../projects/data-engineering-python-course/projects/19-realtime-deduplication/README.md
+        - '20 - Prefect Deployment Pipeline': ../projects/data-engineering-python-course/projects/20-prefect-deployment-pipeline/README.md
+      - 'Tier 3: Expert Level (21-30)':
+        - '21 - Lambda Architecture System': ../projects/data-engineering-python-course/projects/21-lambda-architecture-system/README.md
+        - '22 - Kappa Architecture Pipeline': ../projects/data-engineering-python-course/projects/22-kappa-architecture-pipeline/README.md
+        - '23 - Real-time Feature Store': ../projects/data-engineering-python-course/projects/23-realtime-feature-store/README.md
+        - '24 - Data Mesh Implementation': ../projects/data-engineering-python-course/projects/24-data-mesh-implementation/README.md
+        - '25 - Custom Query Engine': ../projects/data-engineering-python-course/projects/25-custom-query-engine/README.md
+        - '26 - Lakehouse with Iceberg': ../projects/data-engineering-python-course/projects/26-lakehouse-with-iceberg/README.md
+        - '27 - Data Quality Observability Platform': ../projects/data-engineering-python-course/projects/27-data-quality-observability-platform/README.md
+        - '28 - Multi-Region Data Replication': ../projects/data-engineering-python-course/projects/28-multi-region-data-replication/README.md
+        - '29 - Time-Travel Query System': ../projects/data-engineering-python-course/projects/29-time-travel-query-system/README.md
+        - '30 - Real-time ML Feature Platform': ../projects/data-engineering-python-course/projects/30-realtime-ml-feature-platform/README.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:

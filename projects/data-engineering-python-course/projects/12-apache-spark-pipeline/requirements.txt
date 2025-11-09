@@ -1,0 +1,27 @@
+# Project 12: Apache Spark Pipeline
+
+# PySpark
+pyspark==3.5.0
+
+# Data processing
+pandas==2.1.4
+numpy==1.26.2
+pyarrow==14.0.2
+
+# Delta Lake support
+delta-spark==3.0.0
+
+# Database connectivity
+psycopg2-binary==2.9.9
+pymysql==1.1.0
+
+# AWS S3 support (optional)
+boto3==1.34.13
+
+# Development and testing
+pytest==7.4.3
+pytest-spark==0.6.0
+chispa==0.9.4  # Spark DataFrame testing utilities
+
+# Type hints
+py4j==0.10.9.7
