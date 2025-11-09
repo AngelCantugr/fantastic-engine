@@ -228,6 +228,37 @@ nav:
       - Intermediate Examples:
         - Advanced LoRA: ../projects/model-fine-tuning-techniques/examples/intermediate/lora/README.md
         - QLoRA: ../projects/model-fine-tuning-techniques/examples/intermediate/qlora/README.md
+    - Advanced Kotlin Learning:
+      - Overview: ../projects/advanced-kotlin-learning/README.md
+      - Learning Plan: ../projects/advanced-kotlin-learning/LEARNING_PLAN.md
+      - 'Phase 1: Advanced Language Features':
+        - '01 - Type-Safe Builders':
+          - Overview: ../projects/advanced-kotlin-learning/01-type-safe-builders/README.md
+          - Concepts: ../projects/advanced-kotlin-learning/01-type-safe-builders/docs/01-concepts.md
+          - Usage: ../projects/advanced-kotlin-learning/01-type-safe-builders/docs/02-usage.md
+          - Scenarios: ../projects/advanced-kotlin-learning/01-type-safe-builders/docs/03-scenarios.md
+          - Exercises: ../projects/advanced-kotlin-learning/01-type-safe-builders/docs/04-exercises.md
+        - '02 - Coroutines & Flow Advanced': ../projects/advanced-kotlin-learning/02-coroutines-flow-advanced/README.md
+        - '03 - Sealed Classes & ADT': ../projects/advanced-kotlin-learning/03-sealed-classes-adt/README.md
+        - '04 - Inline & Value Classes': ../projects/advanced-kotlin-learning/04-inline-value-classes/README.md
+        - '05 - Delegation Patterns': ../projects/advanced-kotlin-learning/05-delegation-patterns/README.md
+        - '06 - Extension Functions & Receivers': ../projects/advanced-kotlin-learning/06-extension-functions-receivers/README.md
+        - '07 - Collections & Sequences': ../projects/advanced-kotlin-learning/07-collections-sequences/README.md
+      - 'Phase 2: Advanced Patterns & Tools':
+        - '08 - Context Receivers': ../projects/advanced-kotlin-learning/08-context-receivers/README.md
+        - '09 - Compiler Plugins & KSP': ../projects/advanced-kotlin-learning/09-compiler-plugins-ksp/README.md
+        - '10 - Multiplatform Architecture': ../projects/advanced-kotlin-learning/10-multiplatform-architecture/README.md
+        - '11 - Contracts & Smart Casts': ../projects/advanced-kotlin-learning/11-contracts-smart-casts/README.md
+        - '12 - Reflection & KClass': ../projects/advanced-kotlin-learning/12-reflection-kclass/README.md
+        - '13 - Annotation Processing': ../projects/advanced-kotlin-learning/13-annotation-processing/README.md
+        - '14 - Arrow Functional Programming': ../projects/advanced-kotlin-learning/14-arrow-functional-programming/README.md
+      - 'Phase 3: Expert Mastery':
+        - '15 - Custom Coroutine Contexts': ../projects/advanced-kotlin-learning/15-custom-coroutine-contexts/README.md
+        - '16 - Memory & Performance': ../projects/advanced-kotlin-learning/16-memory-performance/README.md
+        - '17 - Gradle Plugin Development': ../projects/advanced-kotlin-learning/17-gradle-plugin-development/README.md
+        - '18 - Metaprogramming & Code Generation': ../projects/advanced-kotlin-learning/18-metaprogramming-codegen/README.md
+        - '19 - Advanced Type System': ../projects/advanced-kotlin-learning/19-advanced-type-system/README.md
+        - '20 - Kotlin DSL Framework (Capstone)': ../projects/advanced-kotlin-learning/20-kotlin-dsl-framework/README.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
