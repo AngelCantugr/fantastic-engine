@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 Syntax Highlighter Playground</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Fira Code', 'Monaco', 'Courier New', monospace;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        select, button {
+            padding: 10px 15px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        select {
+            background: white;
+            min-width: 200px;
+        }
+
+        select:hover, select:focus {
+            border-color: #764ba2;
+            outline: none;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+            border: none;
+        }
+
+        button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .editor-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .panel {
+            background: #f8f9fa;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #e9ecef;
+        }
+
+        .panel-header {
+            background: #667eea;
+            color: white;
+            padding: 12px 20px;
+            font-weight: 600;
+        }
+
+        .panel-content {
+            padding: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 400px;
+            font-family: 'Fira Code', monospace;
+            font-size: 14px;
+            border: none;
+            resize: vertical;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        textarea:focus {
+            outline: 2px solid #667eea;
+        }
+
+        #output {
+            min-height: 400px;
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .info-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .info-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .editor-container {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Syntax Highlighter Playground</h1>
+        <p class="subtitle">Real-time syntax highlighting powered by Rust + WebAssembly</p>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="language-select">Language:</label>
+                <select id="language-select">
+                    <option value="rust">Rust</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="typescript">TypeScript</option>
+                    <option value="go">Go</option>
+                    <option value="java">Java</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="json">JSON</option>
+                    <option value="markdown">Markdown</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="theme-select">Theme:</label>
+                <select id="theme-select">
+                    <option value="base16-ocean.dark">Ocean Dark</option>
+                    <option value="base16-mocha.dark">Mocha Dark</option>
+                    <option value="InspiredGitHub">GitHub Light</option>
+                    <option value="Solarized (dark)">Solarized Dark</option>
+                    <option value="Solarized (light)">Solarized Light</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>&nbsp;</label>
+                <button id="highlight-btn">✨ Highlight</button>
+            </div>
+        </div>
+
+        <div class="editor-container">
+            <div class="panel">
+                <div class="panel-header">📝 Input Code</div>
+                <div class="panel-content">
+                    <textarea id="code-input" placeholder="Paste your code here...">fn factorial(n: u64) -> u64 {
+    match n {
+        0 | 1 => 1,
+        _ => n * factorial(n - 1),
+    }
+}
+
+fn main() {
+    let number = 5;
+    println!("Factorial of {} is {}", number, factorial(number));
+}</textarea>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">🎨 Highlighted Output</div>
+                <div class="panel-content">
+                    <div id="output" class="loading">
+                        Loading WebAssembly module...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="info-card">
+                <h3>⚡ Fast & Efficient</h3>
+                <p>Powered by Rust compiled to WebAssembly for near-native performance in the browser.</p>
+            </div>
+            <div class="info-card">
+                <h3>🎯 Learn Rust</h3>
+                <p>Experience instant visual feedback while learning Rust and WebAssembly development.</p>
+            </div>
+            <div class="info-card">
+                <h3>🔧 Syntect Integration</h3>
+                <p>Uses the syntect library - the same highlighting engine used by many popular editors.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import init, { SyntaxHighlighter } from './pkg/syntax_highlighter_playground.js';
+
+        let highlighter;
+
+        async function initWasm() {
+            try {
+                await init();
+                highlighter = new SyntaxHighlighter();
+
+                // Populate language and theme dropdowns
+                const languages = highlighter.get_languages();
+                const themes = highlighter.get_themes();
+
+                // Update output status
+                document.getElementById('output').innerHTML =
+                    '<div style="color: #4ade80; padding: 20px; text-align: center;">✅ Ready! Click "Highlight" to see the magic.</div>';
+
+                // Auto-highlight on first load
+                highlightCode();
+            } catch (error) {
+                document.getElementById('output').innerHTML =
+                    `<div style="color: #ef4444; padding: 20px;">❌ Error: ${error.message}</div>`;
+            }
+        }
+
+        function highlightCode() {
+            if (!highlighter) {
+                alert('WASM not loaded yet. Please wait...');
+                return;
+            }
+
+            const code = document.getElementById('code-input').value;
+            const language = document.getElementById('language-select').value;
+            const theme = document.getElementById('theme-select').value;
+
+            try {
+                const highlighted = highlighter.highlight(code, language, theme);
+                document.getElementById('output').innerHTML = highlighted;
+            } catch (error) {
+                document.getElementById('output').innerHTML =
+                    `<div style="color: #ef4444; padding: 20px;">❌ Error: ${error}</div>`;
+            }
+        }
+
+        // Event listeners
+        document.getElementById('highlight-btn').addEventListener('click', highlightCode);
+        document.getElementById('code-input').addEventListener('input', highlightCode);
+        document.getElementById('language-select').addEventListener('change', highlightCode);
+        document.getElementById('theme-select').addEventListener('change', highlightCode);
+
+        // Initialize
+        initWasm();
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[package]
+name = "event-sourcing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }
+chrono = { version = "0.4", features = ["serde"] }

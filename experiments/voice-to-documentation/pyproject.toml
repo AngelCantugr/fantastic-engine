@@ -1,0 +1,45 @@
+[project]
+name = "voice-to-documentation"
+version = "0.1.0"
+description = "Voice-powered documentation generator using Whisper and GPT-4"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.10.0",
+    "python-dotenv>=1.0.0",
+    "click>=8.1.7",
+    "rich>=13.7.0",
+    "pydub>=0.25.1",
+    "pyaudio>=0.2.14",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.12.0",
+    "ruff>=0.1.9",
+    "mypy>=1.8.0",
+]
+
+[project.scripts]
+voice2doc = "src.main:cli"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
