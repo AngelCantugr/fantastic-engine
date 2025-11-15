@@ -170,6 +170,14 @@ nav:
       - Prompt Library: experiments/ai-productivity-orchestration/prompt-library.md
       - Weekly Tracker: experiments/ai-productivity-orchestration/weekly-tracker.md
       - Testing Log: experiments/ai-productivity-orchestration/agent-testing-log.md
+    - New Experiments 2025:
+      - Syntax Highlighter Playground: experiments/syntax-highlighter-playground.md
+      - GitHub Streak Saver Bot: experiments/github-streak-saver.md
+      - Voice-to-Documentation: experiments/voice-to-documentation.md
+      - AI Agent Battle Arena: ../experiments/ai-agent-battle-arena/README.md
+      - Hyperfocus Tracker: ../experiments/hyperfocus-tracker/README.md
+      - WebAssembly Collection: ../experiments/wasm-experiments-collection/README.md
+      - Daily Learning Digest: ../experiments/daily-learning-digest/README.md
   - Projects:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
@@ -313,6 +321,12 @@ nav:
         - '20 - Kotlin DSL Framework (Capstone)': ../projects/advanced-kotlin-learning/20-kotlin-dsl-framework/README.md
     - Advanced Go Learning:
       - Overview: projects/advanced-go-learning.md
+    - New Projects 2025:
+      - ADHD Dev Dashboard: ../projects/adhd-dev-dashboard/README.md
+      - MCP Server Hub: ../projects/mcp-server-hub/README.md
+      - LLM Cost Optimizer: ../projects/llm-cost-optimizer/README.md
+      - Context Switch Assistant: ../projects/context-switch-assistant/README.md
+      - Distributed Systems from Scratch: ../projects/distributed-systems-from-scratch/README.md
     - Data Engineering with Python:
       - Overview: ../projects/data-engineering-python-course/README.md
       - Learning Plan: ../projects/data-engineering-python-course/LEARNING_PLAN.md
