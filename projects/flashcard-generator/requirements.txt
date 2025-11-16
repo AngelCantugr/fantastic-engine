@@ -1,0 +1,26 @@
+# Core dependencies
+openai==1.12.0
+python-dotenv==1.0.1
+
+# Markdown processing
+markdown==3.5.2
+python-frontmatter==1.1.0
+mistune==3.0.2
+
+# Code highlighting
+Pygments==2.17.2
+
+# CSV handling
+csv23==0.3.4
+
+# CLI interface
+click==8.1.7
+rich==13.7.0
+
+# Utilities
+pydantic==2.6.1
+tiktoken==0.6.0  # Token counting
+
+# Testing
+pytest==8.0.0
+pytest-cov==4.1.0

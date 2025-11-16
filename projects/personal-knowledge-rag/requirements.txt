@@ -1,0 +1,24 @@
+# Core dependencies
+chromadb==0.4.22
+openai==1.12.0
+python-dotenv==1.0.1
+
+# Markdown processing
+markdown==3.5.2
+python-frontmatter==1.1.0
+
+# Ollama support (optional)
+ollama==0.1.6
+
+# CLI interface
+click==8.1.7
+rich==13.7.0
+
+# Utilities
+tiktoken==0.6.0  # Token counting
+numpy==1.26.4
+pydantic==2.6.1
+
+# Testing
+pytest==8.0.0
+pytest-cov==4.1.0

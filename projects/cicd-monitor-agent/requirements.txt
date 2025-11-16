@@ -1,0 +1,22 @@
+# Core dependencies
+openai==1.12.0
+PyGithub==2.1.1
+python-dotenv==1.0.1
+requests==2.31.0
+
+# Notification channels
+slack-sdk==3.26.2
+
+# CLI interface
+click==8.1.7
+rich==13.7.0
+
+# Utilities
+pydantic==2.6.1
+tiktoken==0.6.0  # Token counting
+python-dateutil==2.8.2
+
+# Testing
+pytest==8.0.0
+pytest-cov==4.1.0
+responses==0.24.1  # Mock HTTP requests

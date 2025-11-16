@@ -1,0 +1,87 @@
+audio:
+  # Supported formats
+  supported_formats:
+    - mp3
+    - m4a
+    - wav
+    - webm
+    - ogg
+
+  # Size limits
+  max_size_mb: 25  # Whisper API limit
+
+  # Processing
+  sample_rate: 16000
+  channels: 1  # Mono
+  bitrate: 64k
+
+  # Chunking for large files
+  enable_chunking: true
+  chunk_duration_minutes: 10
+  chunk_overlap_seconds: 30  # Overlap to avoid cutting off sentences
+
+transcription:
+  # Whisper settings
+  model: whisper-1
+  language: en  # Auto-detect if null
+  temperature: 0  # More deterministic
+
+  # Response format
+  response_format: verbose_json  # Includes timestamps
+
+  # Timestamp settings
+  enable_timestamps: true
+  timestamp_granularity: segment  # Options: segment, word
+
+analysis:
+  # GPT model settings
+  model: gpt-4-turbo-preview
+  max_tokens: 2000
+  temperature: 0.7
+
+  # What to extract
+  extract_summary: true
+  extract_action_items: true
+  extract_decisions: true
+  extract_key_topics: true
+  extract_attendees: true
+  detect_meeting_type: true
+
+  # Chunking for large transcripts
+  max_transcript_length: 15000  # Characters
+  chunk_with_overlap: true
+  overlap_sentences: 3
+
+output:
+  # Template settings
+  default_template: config/template.md
+  collapse_transcript: true  # Use <details> tag
+
+  # Formatting
+  include_processing_stats: true
+  include_timestamps: true
+  timestamp_interval_seconds: 300
+
+  # Organization
+  organize_by_date: false
+  date_folder_format: "YYYY/MM"
+
+speaker_diarization:
+  enabled: false
+  # Requires pyannote.audio
+  min_speakers: 1
+  max_speakers: 10
+
+cost_estimation:
+  # Current OpenAI pricing (update as needed)
+  whisper_per_minute: 0.006
+  gpt4_per_1k_input_tokens: 0.03
+  gpt4_per_1k_output_tokens: 0.06
+
+  # Estimates
+  avg_transcript_tokens_per_minute: 150
+  avg_analysis_output_tokens: 500
+
+  # Warnings
+  warn_if_exceeds_usd: 5.00
+  require_confirmation_if_exceeds_usd: 10.00

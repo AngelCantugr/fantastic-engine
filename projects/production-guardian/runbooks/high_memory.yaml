@@ -1,0 +1,50 @@
+name: High Memory Usage Remediation
+description: Address high memory usage and potential memory leaks
+
+trigger:
+  type: high_memory
+  threshold: 90  # 90% memory usage
+  duration: 10m  # Sustained for 10 minutes
+
+metadata:
+  owner: platform-team
+  severity: high
+  estimated_duration: 15m
+
+steps:
+  - name: Identify memory-intensive processes
+    action: analyze_memory
+    timeout: 1m
+    requires_approval: false
+
+  - name: Capture heap dump for analysis
+    action: heap_dump
+    params:
+      output_path: /tmp/heap_dump
+    requires_approval: false
+    rollback_on_failure: false
+
+  - name: Clear unnecessary caches
+    action: clear_cache
+    params:
+      cache_types: ["application", "temporary"]
+    requires_approval: false
+    rollback_on_failure: false
+
+  - name: Rolling restart of application instances
+    action: rolling_restart
+    params:
+      max_instances: 1
+      wait_between: 5m
+      health_check_delay: 30s
+    requires_approval: true
+    rollback_on_failure: true
+    blast_radius:
+      max_instances: 1
+
+  - name: Verify memory usage reduction
+    action: verify_metrics
+    timeout: 5m
+    success_criteria:
+      memory_usage: "<70%"
+    requires_approval: false

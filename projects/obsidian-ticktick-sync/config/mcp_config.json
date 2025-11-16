@@ -1,0 +1,21 @@
+{
+  "server": {
+    "url": "http://localhost:3000",
+    "timeout": 30,
+    "retry_attempts": 3,
+    "retry_delay": 2
+  },
+  "endpoints": {
+    "tasks": "/api/tasks",
+    "task_by_id": "/api/tasks/{task_id}",
+    "lists": "/api/lists",
+    "create_task": "/api/tasks",
+    "update_task": "/api/tasks/{task_id}",
+    "complete_task": "/api/tasks/{task_id}/complete",
+    "delete_task": "/api/tasks/{task_id}"
+  },
+  "auth": {
+    "type": "bearer",
+    "token_env": "TICKTICK_MCP_TOKEN"
+  }
+}

@@ -1,0 +1,29 @@
+# Core dependencies
+openai>=1.12.0
+rich>=13.7.0
+requests>=2.31.0
+
+# Database and data handling
+sqlalchemy>=2.0.25
+pandas>=2.2.0
+pydantic>=2.6.0
+python-dotenv>=1.0.0
+
+# Visualization
+plotext>=5.2.8
+matplotlib>=3.8.2
+
+# Date/time
+python-dateutil>=2.8.2
+
+# CLI
+click>=8.1.7
+typer>=0.9.0
+
+# Export formats
+tabulate>=0.9.0
+openpyxl>=3.1.2
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=4.1.0

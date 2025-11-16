@@ -1,0 +1,31 @@
+# Core dependencies
+openai>=1.12.0
+rich>=13.7.0
+requests>=2.31.0
+
+# Database
+sqlalchemy>=2.0.25
+alembic>=1.13.1
+
+# API (for leaderboard)
+fastapi>=0.109.0
+uvicorn>=0.27.0
+
+# Data handling
+pydantic>=2.6.0
+python-dotenv>=1.0.0
+pandas>=2.2.0
+
+# Visualization
+plotext>=5.2.8
+
+# CLI
+click>=8.1.7
+typer>=0.9.0
+
+# Date/time
+python-dateutil>=2.8.2
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=4.1.0

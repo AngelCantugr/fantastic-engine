@@ -1,0 +1,40 @@
+name: High Error Rate Remediation
+description: Remediate high error rates in application logs
+
+trigger:
+  type: high_error_rate
+  threshold: 5  # 5% error rate
+  duration: 5m  # Sustained for 5 minutes
+
+metadata:
+  owner: platform-team
+  severity: medium
+  estimated_duration: 10m
+
+steps:
+  - name: Check service health
+    action: health_check
+    timeout: 30s
+    requires_approval: false
+
+  - name: Clear application cache
+    action: clear_cache
+    params:
+      cache_type: application
+    requires_approval: false
+    rollback_on_failure: false
+
+  - name: Restart service
+    action: restart_service
+    params:
+      service: application
+      strategy: rolling
+    requires_approval: true
+    rollback_on_failure: true
+
+  - name: Verify error rate reduction
+    action: verify_metrics
+    timeout: 5m
+    success_criteria:
+      error_rate: "<1%"
+    requires_approval: false

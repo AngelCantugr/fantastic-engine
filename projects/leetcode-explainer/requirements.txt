@@ -1,0 +1,26 @@
+# Core dependencies
+openai>=1.12.0
+rich>=13.7.0
+requests>=2.31.0
+
+# LeetCode integration
+beautifulsoup4>=4.12.0
+lxml>=5.1.0
+
+# Data handling
+pydantic>=2.6.0
+python-dotenv>=1.0.0
+
+# Caching
+diskcache>=5.6.0
+
+# CLI
+click>=8.1.7
+typer>=0.9.0
+
+# Code analysis
+ast-comments>=1.1.0
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=4.1.0

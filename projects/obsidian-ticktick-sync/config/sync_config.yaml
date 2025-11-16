@@ -1,0 +1,39 @@
+sync_rules:
+  # Which files to include
+  include_paths:
+    - "Daily Notes/**/*.md"
+    - "Projects/**/*.md"
+    - "Tasks.md"
+
+  # Which files to exclude
+  exclude_paths:
+    - "Archive/**"
+    - "Templates/**"
+    - ".obsidian/**"
+    - ".trash/**"
+
+  # Task markers
+  markers:
+    sync_to_ticktick: "[>]"      # Sync this task
+    completed: "[x]"              # Completed task
+    cancelled: "[-]"              # Cancelled (won't sync)
+    in_progress: "[/]"            # In progress (optional)
+
+  # TickTick settings
+  ticktick:
+    default_list: "Inbox"
+    default_priority: 0           # 0=None, 1=Low, 3=Medium, 5=High
+    sync_tags: true
+    sync_due_dates: true
+    sync_descriptions: true
+
+  # Hierarchy
+  preserve_hierarchy: true
+  max_depth: 3                    # Max nesting level
+
+  # Advanced
+  detect_changes:
+    check_content: true
+    check_status: true
+    check_priority: true
+    check_due_date: true

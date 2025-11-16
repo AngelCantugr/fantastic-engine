@@ -1,0 +1,25 @@
+# Core dependencies
+openai==1.12.0
+PyGithub==2.1.1
+python-dotenv==1.0.1
+
+# Diff parsing
+gitdiff==0.2.0
+unidiff==0.7.5
+
+# CLI interface
+click==8.1.7
+rich==13.7.0
+
+# Webhook server (optional)
+flask==3.0.1
+gunicorn==21.2.0
+
+# Utilities
+pydantic==2.6.1
+tiktoken==0.6.0  # Token counting
+
+# Testing
+pytest==8.0.0
+pytest-cov==4.1.0
+responses==0.24.1  # Mock HTTP requests

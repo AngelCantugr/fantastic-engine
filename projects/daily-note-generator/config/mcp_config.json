@@ -1,0 +1,19 @@
+{
+  "server": {
+    "url": "http://localhost:3000",
+    "timeout": 30,
+    "retry_attempts": 3,
+    "retry_delay": 2
+  },
+  "endpoints": {
+    "tasks": "/api/tasks",
+    "today_tasks": "/api/tasks/today",
+    "task_by_id": "/api/tasks/{task_id}",
+    "lists": "/api/lists"
+  },
+  "filters": {
+    "include_completed": false,
+    "include_future": true,
+    "max_days_ahead": 1
+  }
+}

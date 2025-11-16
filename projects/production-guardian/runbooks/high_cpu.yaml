@@ -1,0 +1,39 @@
+name: High CPU Usage Remediation
+description: Address sustained high CPU usage
+
+trigger:
+  type: high_cpu
+  threshold: 80  # 80% CPU usage
+  duration: 5m   # Sustained for 5 minutes
+
+metadata:
+  owner: platform-team
+  severity: medium
+  estimated_duration: 10m
+
+steps:
+  - name: Identify CPU-intensive processes
+    action: analyze_cpu
+    timeout: 1m
+    requires_approval: false
+
+  - name: Check for runaway processes
+    action: check_processes
+    params:
+      cpu_threshold: 80
+    requires_approval: false
+
+  - name: Scale up resources
+    action: scale_resources
+    params:
+      resource_type: cpu
+      scale_factor: 1.5
+    requires_approval: true
+    rollback_on_failure: true
+
+  - name: Verify CPU usage reduction
+    action: verify_metrics
+    timeout: 5m
+    success_criteria:
+      cpu_usage: "<60%"
+    requires_approval: false

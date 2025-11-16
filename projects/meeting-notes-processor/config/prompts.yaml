@@ -1,0 +1,128 @@
+summary_prompt: |
+  Analyze this meeting transcript and create a concise summary (3-5 sentences).
+
+  Focus on:
+  1. Main purpose of the meeting
+  2. Key outcomes and decisions
+  3. Important context for someone who wasn't there
+  4. Overall tone and productivity
+
+  Keep it professional but friendly. Make it useful for someone reviewing notes later.
+
+  Transcript:
+  {transcript}
+
+key_outcomes_prompt: |
+  From this meeting transcript, identify the 3-5 most important outcomes or results.
+
+  These should be concrete things that were accomplished or agreed upon, not just topics discussed.
+
+  Format as a bulleted list. Be specific and actionable.
+
+  Transcript:
+  {transcript}
+
+action_items_prompt: |
+  Extract ALL action items from this meeting transcript.
+
+  For each action item, identify:
+  - **Who** is responsible (assignee) - use their name if mentioned
+  - **What** needs to be done (specific task)
+  - **When** it's due (if mentioned, otherwise leave blank)
+  - Relevant **tags** (e.g., #dev, #design, #urgent)
+
+  Format each as a markdown checkbox:
+  - [ ] **Person** - Task description by DATE #tags
+
+  Only include actual commitments, not vague ideas or suggestions.
+
+  Be thorough - missing an action item defeats the purpose!
+
+  Transcript:
+  {transcript}
+
+decisions_prompt: |
+  Identify all DECISIONS made during this meeting.
+
+  For each decision, provide:
+  1. What was decided (be specific)
+  2. The reasoning or context behind the decision
+  3. Who made the decision (if clear)
+
+  Format as numbered list with clear structure:
+
+  1. **Decision Title**
+     - Decision: [what was decided]
+     - Reason: [why this was chosen]
+     - Who: [decision maker or team consensus]
+
+  Only include actual decisions, not just discussions or ideas. A decision means:
+  - A clear choice was made between options
+  - The team committed to a direction
+  - Someone gave approval or made a call
+
+  Transcript:
+  {transcript}
+
+key_topics_prompt: |
+  Identify the main topics discussed in this meeting and create a brief summary of each.
+
+  For each major topic:
+  1. Topic name (2-5 words)
+  2. 2-3 sentence summary of what was discussed
+  3. Timestamp where this topic started (if available: [HH:MM:SS])
+
+  Format as:
+
+  ### Topic Name [HH:MM:SS]
+  Brief summary of the discussion. Key points covered. Any notable outcomes.
+
+  Focus on topics that took significant time or were important.
+  Skip minor tangents or quick updates.
+
+  Transcript:
+  {transcript}
+
+attendees_extraction_prompt: |
+  From this meeting transcript, identify all attendees.
+
+  Look for:
+  - People who spoke (speaker labels)
+  - Names mentioned in introductions
+  - People referred to in discussion
+
+  Return as comma-separated list of names.
+  If roles are mentioned, include them in parentheses: "Alice (Product), Bob (Engineering)"
+
+  Transcript:
+  {transcript}
+
+meeting_type_prompt: |
+  Based on this transcript, classify the meeting type.
+
+  Common types:
+  - Sprint Planning
+  - Daily Standup
+  - Retrospective
+  - 1:1 / One-on-One
+  - All Hands
+  - Design Review
+  - Code Review
+  - Client Meeting
+  - Brainstorming
+  - Status Update
+  - Other
+
+  Return just the meeting type, nothing else.
+
+  Transcript:
+  {transcript}
+
+tone: professional
+
+# Alternative tones
+tones:
+  professional: "Maintain a professional, business-appropriate tone."
+  casual: "Use a friendly, conversational tone."
+  technical: "Use precise technical language, assume technical audience."
+  executive: "Be concise and high-level, focus on business impact."

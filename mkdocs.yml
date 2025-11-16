@@ -174,6 +174,7 @@ nav:
     - Index: projects/index.md
     - RAG Learning Project: projects/rag-learning-project.md
     - TickTick Priority Agent: projects/ticktick-priority-agent.md
+    - Executive Function Dashboard: ../projects/executive-function-dashboard/README.md
     - Rust Learning Path:
       - Overview: ../projects/rust-learning-path/README.md
       - '01 - Hello Rust': ../projects/rust-learning-path/01-hello-rust/README.md
@@ -358,6 +359,47 @@ nav:
         - '28 - Multi-Region Data Replication': ../projects/data-engineering-python-course/projects/28-multi-region-data-replication/README.md
         - '29 - Time-Travel Query System': ../projects/data-engineering-python-course/projects/29-time-travel-query-system/README.md
         - '30 - Real-time ML Feature Platform': ../projects/data-engineering-python-course/projects/30-realtime-ml-feature-platform/README.md
+    - Backend Engineering Practice:
+      - URL Shortener: ../projects/url-shortener/README.md
+      - Real-Time Chat: ../projects/realtime-chat/README.md
+      - GraphQL API: ../projects/graphql-api/README.md
+    - ADHD Productivity & Learning Tools:
+      - Master Roadmap: adhd-productivity-learning-roadmap.md
+      - ADHD Productivity Tools:
+        - Context Recovery Agent: ../projects/context-recovery-agent/README.md
+        - Pomodoro Tracker: ../projects/pomodoro-tracker/README.md
+        - Toil Automation Identifier: ../projects/toil-automation-identifier/README.md
+        - Executive Function Dashboard: ../projects/executive-function-dashboard/README.md
+      - Ultralearning Support:
+        - Personal Knowledge RAG: ../projects/personal-knowledge-rag/README.md
+        - PR Review Agent: ../projects/pr-review-agent/README.md
+        - CI/CD Monitor Agent: ../projects/cicd-monitor-agent/README.md
+        - Flashcard Generator: ../projects/flashcard-generator/README.md
+        - Ultralearning Tracker: ../projects/ultralearning-tracker/README.md
+      - Advanced AI Projects:
+        - Multi-Agent SDLC: ../projects/multi-agent-sdlc/README.md
+        - Production Guardian: ../projects/production-guardian/README.md
+        - Self-Improving Agent: ../projects/self-improving-agent/README.md
+      - Workflow Automation:
+        - Obsidian-TickTick Sync: ../projects/obsidian-ticktick-sync/README.md
+        - Daily Note Generator: ../projects/daily-note-generator/README.md
+        - Meeting Notes Processor: ../projects/meeting-notes-processor/README.md
+      - Learning & Experimentation:
+        - LangGraph Patterns: ../projects/langgraph-patterns/README.md
+        - Cost Optimizer: ../projects/cost-optimizer/README.md
+        - Experiment Tracker: ../projects/experiment-tracker/README.md
+      - LeetCode Learning Tools:
+        - Solution Explainer: ../projects/leetcode-explainer/README.md
+        - Pattern Trainer: ../projects/leetcode-pattern-trainer/README.md
+        - Session Analyzer: ../projects/leetcode-session-analyzer/README.md
+        - Code Trace Visualizer: ../projects/leetcode-trace-visualizer/README.md
+        - Progressive Hints: ../projects/leetcode-hints/README.md
+        - Similar Problems Generator: ../projects/leetcode-similar-problems/README.md
+        - Study Planner: ../projects/leetcode-study-planner/README.md
+        - Mistake Analyzer: ../projects/leetcode-mistake-analyzer/README.md
+        - Pair Programming Bot: ../projects/leetcode-pair-bot/README.md
+        - Streak & Gamification: ../projects/leetcode-gamification/README.md
+    - Shared Utilities: ../projects/shared-utils/README.md
   - Learning Log:
     - Index: learning-log/index.md
   - Templates:
